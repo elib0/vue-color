@@ -1,6 +1,6 @@
 {
   "name": "vue-color",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Color of Vue Components",
   "keywords": [
     "color",
@@ -15,7 +15,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "test": "npm run unit && npm run e2e",
     "unit": "karma start test/unit/karma.conf.js --single-run",
-    "release": "webpack --progress --hide-modules --config  ./build/webpack.release.js && NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js"
+    "release": "webpack --progress --hide-modules --config  ./build/webpack.release.js && set NODE_ENV=production webpack --progress --hide-modules --config  ./build/webpack.release.min.js"
   },
   "repository": {
     "type": "git",

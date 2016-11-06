@@ -76,11 +76,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Photoshop2 = _interopRequireDefault(_Photoshop);
 	
-	var _Sketch = __webpack_require__(58);
+	var _Sketch = __webpack_require__(57);
 	
 	var _Sketch2 = _interopRequireDefault(_Sketch);
 	
-	var _Chrome = __webpack_require__(63);
+	var _Chrome = __webpack_require__(62);
 	
 	var _Chrome2 = _interopRequireDefault(_Chrome);
 	
@@ -104,23 +104,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(2)
 	__vue_script__ = __webpack_require__(6)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Compact.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\Compact.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(14)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-57c1b8e2/Compact.vue"
+	  var id = "_v-92ab77ca/Compact.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -163,7 +170,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__compact {\n  padding-top: 5px;\n  padding-left: 5px;\n  width: 240px;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__compact__colors {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n}\n.vue-color__compact__color-item {\n  list-style: none;\n  width: 15px;\n  height: 15px;\n  float: left;\n  margin-right: 5px;\n  margin-bottom: 5px;\n  position: relative;\n  cursor: pointer;\n}\n.vue-color__compact__color-item--white {\n  box-shadow: inset 0 0 0 1px #ddd;\n}\n.vue-color__compact__color-item--white .vue-color__compact__dot {\n  background: #000;\n}\n.vue-color__compact__dot {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  bottom: 5px;\n  left: 5px;\n  border-radius: 50%;\n  opacity: 1;\n  background: #fff;\n}\n.vue-color__compact__fields {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  padding-bottom: 6px;\n  padding-right: 5px;\n  position: relative;\n}\n.vue-color__compact__fields .vue-color__editable-input__input {\n  width: 70%;\n  padding-left: 30%;\n  background: none;\n  font-size: 12px;\n  color: #333;\n  height: 16px;\n}\n.vue-color__compact__fields .vue-color__editable-input__label {\n  position: absolute;\n  top: 3px;\n  left: 0;\n  line-height: 16px;\n  text-transform: uppercase;\n  font-size: 12px;\n  color: #999;\n}\n.vue-color__compact__pick-color {\n  position: absolute;\n  top: 6px;\n  left: 5px;\n  height: 9px;\n  width: 9px;\n}\n.vue-color__compact__col-3 {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue_color__compact__col-hex {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__input {\n  width: 80%;\n  padding-left: 20%;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__label {\n  display: none;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Compact.vue","/./src/components/Compact.vue"],"names":[],"mappings":"AAiGA;EACE,iBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,oEAAA;CChGD;ADiGD;EACE,iBAAA;EACA,WAAA;EACA,UAAA;CC/FD;ADgGD;EACE,iBAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;CC9FD;AD+FD;EACE,iCAAA;CC7FD;AD8FC;EACI,iBAAA;CC5FL;AD6FD;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,mBAAA;EACA,WAAA;EACA,iBAAA;CC3FD;AD4FD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,mBAAA;EACA,oBAAA;EACA,mBAAA;EACA,mBAAA;CC1FD;AD2FC;EACE,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;CCzFH;AD0FC;EACE,mBAAA;EACA,SAAA;EACA,QAAA;EACA,kBAAA;EACA,0BAAA;EACA,gBAAA;EACA,YAAA;CCxFH;ADyFD;EACE,mBAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,WAAA;CCvFD;ADwFD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CCtFD;ADuFD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CCrFD;ADsFC;EACE,WAAA;EACA,kBAAA;CCpFH;ADqFC;EACE,cAAA;CCnFH","file":"Compact.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__compact\n  padding-top 5px\n  padding-left 5px\n  width 240px\n  border-radius 2px\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\n.vue-color__compact__colors\n  overflow hidden\n  padding 0\n  margin 0\n.vue-color__compact__color-item\n  list-style none\n  width 15px\n  height 15px\n  float left\n  margin-right 5px\n  margin-bottom 5px\n  position relative\n  cursor pointer\n.vue-color__compact__color-item--white\n  box-shadow inset 0 0 0 1px #ddd\n  .vue-color__compact__dot\n      background #000      \n.vue-color__compact__dot\n  position absolute\n  top 5px\n  right 5px\n  bottom 5px\n  left 5px\n  border-radius 50%\n  opacity 1\n  background #fff\n.vue-color__compact__fields\n  display flex\n  position relative\n  padding-bottom 6px\n  padding-right 5px\n  position relative\n  .vue-color__editable-input__input\n    width 70%\n    padding-left 30%\n    background none\n    font-size 12px\n    color #333\n    height 16px\n  .vue-color__editable-input__label\n    position absolute\n    top 3px\n    left 0\n    line-height 16px\n    text-transform uppercase\n    font-size 12px\n    color #999\n.vue-color__compact__pick-color\n  position absolute\n  top 6px\n  left 5px\n  height 9px\n  width 9px\n.vue-color__compact__col-3\n  flex 1\n.vue_color__compact__col-hex\n  flex 2\n  .vue-color__editable-input__input\n    width 80%\n    padding-left 20%  \n  .vue-color__editable-input__label\n    display none\n",".vue-color__compact {\n  padding-top: 5px;\n  padding-left: 5px;\n  width: 240px;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__compact__colors {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n}\n.vue-color__compact__color-item {\n  list-style: none;\n  width: 15px;\n  height: 15px;\n  float: left;\n  margin-right: 5px;\n  margin-bottom: 5px;\n  position: relative;\n  cursor: pointer;\n}\n.vue-color__compact__color-item--white {\n  box-shadow: inset 0 0 0 1px #ddd;\n}\n.vue-color__compact__color-item--white .vue-color__compact__dot {\n  background: #000;\n}\n.vue-color__compact__dot {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  bottom: 5px;\n  left: 5px;\n  border-radius: 50%;\n  opacity: 1;\n  background: #fff;\n}\n.vue-color__compact__fields {\n  display: flex;\n  position: relative;\n  padding-bottom: 6px;\n  padding-right: 5px;\n  position: relative;\n}\n.vue-color__compact__fields .vue-color__editable-input__input {\n  width: 70%;\n  padding-left: 30%;\n  background: none;\n  font-size: 12px;\n  color: #333;\n  height: 16px;\n}\n.vue-color__compact__fields .vue-color__editable-input__label {\n  position: absolute;\n  top: 3px;\n  left: 0;\n  line-height: 16px;\n  text-transform: uppercase;\n  font-size: 12px;\n  color: #999;\n}\n.vue-color__compact__pick-color {\n  position: absolute;\n  top: 6px;\n  left: 5px;\n  height: 9px;\n  width: 9px;\n}\n.vue-color__compact__col-3 {\n  flex: 1;\n}\n.vue_color__compact__col-hex {\n  flex: 2;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__input {\n  width: 80%;\n  padding-left: 20%;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__label {\n  display: none;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__compact {\n  padding-top: 5px;\n  padding-left: 5px;\n  width: 240px;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__compact__colors {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n}\n.vue-color__compact__color-item {\n  list-style: none;\n  width: 15px;\n  height: 15px;\n  float: left;\n  margin-right: 5px;\n  margin-bottom: 5px;\n  position: relative;\n  cursor: pointer;\n}\n.vue-color__compact__color-item--white {\n  box-shadow: inset 0 0 0 1px #ddd;\n}\n.vue-color__compact__color-item--white .vue-color__compact__dot {\n  background: #000;\n}\n.vue-color__compact__dot {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  bottom: 5px;\n  left: 5px;\n  border-radius: 50%;\n  opacity: 1;\n  background: #fff;\n}\n.vue-color__compact__fields {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  padding-bottom: 6px;\n  padding-right: 5px;\n  position: relative;\n}\n.vue-color__compact__fields .vue-color__editable-input__input {\n  width: 70%;\n  padding-left: 30%;\n  background: none;\n  font-size: 12px;\n  color: #333;\n  height: 16px;\n}\n.vue-color__compact__fields .vue-color__editable-input__label {\n  position: absolute;\n  top: 3px;\n  left: 0;\n  line-height: 16px;\n  text-transform: uppercase;\n  font-size: 12px;\n  color: #999;\n}\n.vue-color__compact__pick-color {\n  position: absolute;\n  top: 6px;\n  left: 5px;\n  height: 9px;\n  width: 9px;\n}\n.vue-color__compact__col-3 {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue_color__compact__col-hex {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__input {\n  width: 80%;\n  padding-left: 20%;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__label {\n  display: none;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Compact.vue","/./src/components/Compact.vue"],"names":[],"mappings":"AAiGA;EACE,iBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,oEAAA;CChGD;ADiGD;EACE,iBAAA;EACA,WAAA;EACA,UAAA;CC/FD;ADgGD;EACE,iBAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;CC9FD;AD+FD;EACE,iCAAA;CC7FD;AD8FC;EACI,iBAAA;CC5FL;AD6FD;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,mBAAA;EACA,WAAA;EACA,iBAAA;CC3FD;AD4FD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,mBAAA;EACA,oBAAA;EACA,mBAAA;EACA,mBAAA;CC1FD;AD2FC;EACE,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;CCzFH;AD0FC;EACE,mBAAA;EACA,SAAA;EACA,QAAA;EACA,kBAAA;EACA,0BAAA;EACA,gBAAA;EACA,YAAA;CCxFH;ADyFD;EACE,mBAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,WAAA;CCvFD;ADwFD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CCtFD;ADuFD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CCrFD;ADsFC;EACE,WAAA;EACA,kBAAA;CCpFH;ADqFC;EACE,cAAA;CCnFH","file":"Compact.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__compact\r\n  padding-top 5px\r\n  padding-left 5px\r\n  width 240px\r\n  border-radius 2px\r\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\r\n.vue-color__compact__colors\r\n  overflow hidden\r\n  padding 0\r\n  margin 0\r\n.vue-color__compact__color-item\r\n  list-style none\r\n  width 15px\r\n  height 15px\r\n  float left\r\n  margin-right 5px\r\n  margin-bottom 5px\r\n  position relative\r\n  cursor pointer\r\n.vue-color__compact__color-item--white\r\n  box-shadow inset 0 0 0 1px #ddd\r\n  .vue-color__compact__dot\r\n      background #000      \r\n.vue-color__compact__dot\r\n  position absolute\r\n  top 5px\r\n  right 5px\r\n  bottom 5px\r\n  left 5px\r\n  border-radius 50%\r\n  opacity 1\r\n  background #fff\r\n.vue-color__compact__fields\r\n  display flex\r\n  position relative\r\n  padding-bottom 6px\r\n  padding-right 5px\r\n  position relative\r\n  .vue-color__editable-input__input\r\n    width 70%\r\n    padding-left 30%\r\n    background none\r\n    font-size 12px\r\n    color #333\r\n    height 16px\r\n  .vue-color__editable-input__label\r\n    position absolute\r\n    top 3px\r\n    left 0\r\n    line-height 16px\r\n    text-transform uppercase\r\n    font-size 12px\r\n    color #999\r\n.vue-color__compact__pick-color\r\n  position absolute\r\n  top 6px\r\n  left 5px\r\n  height 9px\r\n  width 9px\r\n.vue-color__compact__col-3\r\n  flex 1\r\n.vue_color__compact__col-hex\r\n  flex 2\r\n  .vue-color__editable-input__input\r\n    width 80%\r\n    padding-left 20%  \r\n  .vue-color__editable-input__label\r\n    display none\r\n",".vue-color__compact {\n  padding-top: 5px;\n  padding-left: 5px;\n  width: 240px;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__compact__colors {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n}\n.vue-color__compact__color-item {\n  list-style: none;\n  width: 15px;\n  height: 15px;\n  float: left;\n  margin-right: 5px;\n  margin-bottom: 5px;\n  position: relative;\n  cursor: pointer;\n}\n.vue-color__compact__color-item--white {\n  box-shadow: inset 0 0 0 1px #ddd;\n}\n.vue-color__compact__color-item--white .vue-color__compact__dot {\n  background: #000;\n}\n.vue-color__compact__dot {\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  bottom: 5px;\n  left: 5px;\n  border-radius: 50%;\n  opacity: 1;\n  background: #fff;\n}\n.vue-color__compact__fields {\n  display: flex;\n  position: relative;\n  padding-bottom: 6px;\n  padding-right: 5px;\n  position: relative;\n}\n.vue-color__compact__fields .vue-color__editable-input__input {\n  width: 70%;\n  padding-left: 30%;\n  background: none;\n  font-size: 12px;\n  color: #333;\n  height: 16px;\n}\n.vue-color__compact__fields .vue-color__editable-input__label {\n  position: absolute;\n  top: 3px;\n  left: 0;\n  line-height: 16px;\n  text-transform: uppercase;\n  font-size: 12px;\n  color: #999;\n}\n.vue-color__compact__pick-color {\n  position: absolute;\n  top: 6px;\n  left: 5px;\n  height: 9px;\n  width: 9px;\n}\n.vue-color__compact__col-3 {\n  flex: 1;\n}\n.vue_color__compact__col-hex {\n  flex: 2;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__input {\n  width: 80%;\n  padding-left: 20%;\n}\n.vue_color__compact__col-hex .vue-color__editable-input__label {\n  display: none;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -550,7 +557,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    hsv: hsv,
 	    oldHue: data.h || oldHue || hsl.h,
 	    source: data.source,
-	    a: data.a
+	    a: data.a,
+	    css: {
+	      rgba: 'rgba(' + color.toRgb().r + ', ' + color.toRgb().g + ', ' + color.toRgb().b + ', ' + color.toRgb().a + ')'
+	    }
 	  };
 	}
 	
@@ -565,6 +575,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  methods: {
 	    colorChange: function colorChange(data, oldHue) {
 	      this.colors = _colorChange(data, oldHue);
+	      this.$emit('change-color', data);
 	    },
 	    isValidHex: function isValidHex(hex) {
 	      return (0, _tinycolor2.default)(hex).isValid();
@@ -1797,23 +1808,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(10)
 	__vue_script__ = __webpack_require__(12)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/common/EditableInput.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\common\\EditableInput.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(13)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3ce88526/EditableInput.vue"
+	  var id = "_v-3f3f30e6/EditableInput.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -1856,7 +1874,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__editable-input {\n  position: relative;\n}\n.vue-color__editable-input__input {\n  padding: 0;\n  border: 0;\n  outline: none;\n}\n.vue-color__editable-input__label {\n  text-transform: capitalize;\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/EditableInput.vue","/./src/components/common/EditableInput.vue"],"names":[],"mappings":"AA+EA;EACE,mBAAA;CC9ED;AD+ED;EACE,WAAA;EACA,UAAA;EACA,cAAA;CC7ED;AD8ED;EACE,2BAAA;CC5ED","file":"EditableInput.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__editable-input\n  position relative\n.vue-color__editable-input__input\n  padding 0\n  border 0\n  outline none\n.vue-color__editable-input__label\n  text-transform capitalize\n",".vue-color__editable-input {\n  position: relative;\n}\n.vue-color__editable-input__input {\n  padding: 0;\n  border: 0;\n  outline: none;\n}\n.vue-color__editable-input__label {\n  text-transform: capitalize;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__editable-input {\n  position: relative;\n}\n.vue-color__editable-input__input {\n  padding: 0;\n  border: 0;\n  outline: none;\n}\n.vue-color__editable-input__label {\n  text-transform: capitalize;\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/EditableInput.vue","/./src/components/common/EditableInput.vue"],"names":[],"mappings":"AA+EA;EACE,mBAAA;CC9ED;AD+ED;EACE,WAAA;EACA,UAAA;EACA,cAAA;CC7ED;AD8ED;EACE,2BAAA;CC5ED","file":"EditableInput.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__editable-input\r\n  position relative\r\n.vue-color__editable-input__input\r\n  padding 0\r\n  border 0\r\n  outline none\r\n.vue-color__editable-input__label\r\n  text-transform capitalize\r\n",".vue-color__editable-input {\n  position: relative;\n}\n.vue-color__editable-input__input {\n  padding: 0;\n  border: 0;\n  outline: none;\n}\n.vue-color__editable-input__label {\n  text-transform: capitalize;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -1951,23 +1969,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(16)
 	__vue_script__ = __webpack_require__(18)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Material.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\Material.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(19)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2d7b976b/Material.vue"
+	  var id = "_v-c756ef42/Material.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2010,7 +2035,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__material {\n  width: 98px;\n  height: 98px;\n  padding: 16px;\n  font-family: \"Roboto\";\n  position: relative;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__material .vue-color__editable-input__input {\n  width: 100%;\n  margin-top: 12px;\n  font-size: 15px;\n  color: #333;\n  height: 30px;\n}\n.vue-color__material .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  font-size: 11px;\n  color: #999;\n  text-transform: capitalize;\n}\n.vue-color__material__hex {\n  border-bottom-width: 2px;\n  border-bottom-style: solid;\n}\n.vue-color__material__split {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-right: -10px;\n  padding-top: 11px;\n}\n.vue-color__material__third {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  padding-right: 10px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Material.vue","/./src/components/Material.vue"],"names":[],"mappings":"AAiEA;EACE,YAAA;EACA,aAAA;EACA,cAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;EACA,oEAAA;CChED;ADiEC;EACE,YAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;CC/DH;ADgEC;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,gBAAA;EACA,YAAA;EACA,2BAAA;CC9DH;AD+DD;EACE,yBAAA;EACA,2BAAA;CC7DD;AD8DD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,oBAAA;EACA,kBAAA;CC5DD;AD6DD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,oBAAA;CC3DD","file":"Material.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__material\n  width 98px\n  height 98px\n  padding 16px\n  font-family \"Roboto\"\n  position relative\n  border-radius 2px\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\n  .vue-color__editable-input__input\n    width 100%\n    margin-top 12px\n    font-size 15px\n    color #333\n    height 30px\n  .vue-color__editable-input__label\n    position absolute\n    top 0\n    left 0\n    font-size 11px\n    color #999\n    text-transform capitalize\n.vue-color__material__hex\n  border-bottom-width 2px\n  border-bottom-style solid\n.vue-color__material__split\n  display flex\n  margin-right -10px\n  padding-top 11px\n.vue-color__material__third\n  flex 1\n  padding-right 10px\n",".vue-color__material {\n  width: 98px;\n  height: 98px;\n  padding: 16px;\n  font-family: \"Roboto\";\n  position: relative;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__material .vue-color__editable-input__input {\n  width: 100%;\n  margin-top: 12px;\n  font-size: 15px;\n  color: #333;\n  height: 30px;\n}\n.vue-color__material .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  font-size: 11px;\n  color: #999;\n  text-transform: capitalize;\n}\n.vue-color__material__hex {\n  border-bottom-width: 2px;\n  border-bottom-style: solid;\n}\n.vue-color__material__split {\n  display: flex;\n  margin-right: -10px;\n  padding-top: 11px;\n}\n.vue-color__material__third {\n  flex: 1;\n  padding-right: 10px;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__material {\n  width: 98px;\n  height: 98px;\n  padding: 16px;\n  font-family: \"Roboto\";\n  position: relative;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__material .vue-color__editable-input__input {\n  width: 100%;\n  margin-top: 12px;\n  font-size: 15px;\n  color: #333;\n  height: 30px;\n}\n.vue-color__material .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  font-size: 11px;\n  color: #999;\n  text-transform: capitalize;\n}\n.vue-color__material__hex {\n  border-bottom-width: 2px;\n  border-bottom-style: solid;\n}\n.vue-color__material__split {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-right: -10px;\n  padding-top: 11px;\n}\n.vue-color__material__third {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  padding-right: 10px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Material.vue","/./src/components/Material.vue"],"names":[],"mappings":"AAiEA;EACE,YAAA;EACA,aAAA;EACA,cAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;EACA,oEAAA;CChED;ADiEC;EACE,YAAA;EACA,iBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;CC/DH;ADgEC;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,gBAAA;EACA,YAAA;EACA,2BAAA;CC9DH;AD+DD;EACE,yBAAA;EACA,2BAAA;CC7DD;AD8DD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,oBAAA;EACA,kBAAA;CC5DD;AD6DD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,oBAAA;CC3DD","file":"Material.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__material\r\n  width 98px\r\n  height 98px\r\n  padding 16px\r\n  font-family \"Roboto\"\r\n  position relative\r\n  border-radius 2px\r\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\r\n  .vue-color__editable-input__input\r\n    width 100%\r\n    margin-top 12px\r\n    font-size 15px\r\n    color #333\r\n    height 30px\r\n  .vue-color__editable-input__label\r\n    position absolute\r\n    top 0\r\n    left 0\r\n    font-size 11px\r\n    color #999\r\n    text-transform capitalize\r\n.vue-color__material__hex\r\n  border-bottom-width 2px\r\n  border-bottom-style solid\r\n.vue-color__material__split\r\n  display flex\r\n  margin-right -10px\r\n  padding-top 11px\r\n.vue-color__material__third\r\n  flex 1\r\n  padding-right 10px\r\n",".vue-color__material {\n  width: 98px;\n  height: 98px;\n  padding: 16px;\n  font-family: \"Roboto\";\n  position: relative;\n  border-radius: 2px;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__material .vue-color__editable-input__input {\n  width: 100%;\n  margin-top: 12px;\n  font-size: 15px;\n  color: #333;\n  height: 30px;\n}\n.vue-color__material .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  font-size: 11px;\n  color: #999;\n  text-transform: capitalize;\n}\n.vue-color__material__hex {\n  border-bottom-width: 2px;\n  border-bottom-style: solid;\n}\n.vue-color__material__split {\n  display: flex;\n  margin-right: -10px;\n  padding-top: 11px;\n}\n.vue-color__material__third {\n  flex: 1;\n  padding-right: 10px;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2080,23 +2105,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(21)
 	__vue_script__ = __webpack_require__(23)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Slider.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\Slider.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(29)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-083d1925/Slider.vue"
+	  var id = "_v-127491ce/Slider.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2139,7 +2171,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__slider {\n  position: relative;\n  width: 410px;\n}\n.vue-color__slider__hue-warp {\n  height: 12px;\n  position: relative;\n}\n.vue-color__slider__hue-warp .vue-color__c-hue__picker {\n  width: 14px;\n  height: 14px;\n  border-radius: 6px;\n  -webkit-transform: translate(-7px, -2px);\n          transform: translate(-7px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__slider__swatches {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 20px;\n}\n.vue-color__slider__swatch {\n  margin-right: 1px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 20%;\n}\n.vue-color__slider__swatch:first-child {\n  margin-right: 1px;\n}\n.vue-color__slider__swatch:first-child .vue-color__slider__swatch-picker {\n  border-radius: 2px 0px 0px 2px;\n}\n.vue-color__slider__swatch:last-child {\n  margin-right: 0;\n}\n.vue-color__slider__swatch:last-child .vue-color__slider__swatch-picker {\n  border-radius: 0px 2px 2px 0px;\n}\n.vue-color__slider__swatch-picker {\n  cursor: pointer;\n  height: 12px;\n}\n.vue-color__slider__swatch-picker--active {\n  -webkit-transform: scaleY(1.8);\n          transform: scaleY(1.8);\n  border-radius: 3.6px/2px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Slider.vue","/./src/components/Slider.vue"],"names":[],"mappings":"AA4DA;EACE,mBAAA;EACA,aAAA;CC3DD;AD4DD;EACE,aAAA;EACA,mBAAA;CC1DD;AD2DC;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;EACA,0BAAA;EACA,yCAAA;CCzDH;AD0DD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,iBAAA;CCxDD;ADyDD;EACE,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,WAAA;CCvDD;ADwDC;EACE,kBAAA;CCtDH;ADuDG;EACE,+BAAA;CCrDL;ADsDC;EACE,gBAAA;CCpDH;ADqDG;EACE,+BAAA;CCnDL;ADoDD;EACE,gBAAA;EACA,aAAA;CClDD;ADmDD;EACE,+BAAA;UAAA,uBAAA;EACA,yBAAA;CCjDD","file":"Slider.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__slider\n  position relative\n  width 410px\n.vue-color__slider__hue-warp\n  height 12px\n  position relative\n  .vue-color__c-hue__picker\n    width 14px\n    height 14px\n    border-radius 6px\n    transform translate(-7px, -2px)\n    background-color rgb(248, 248, 248)\n    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.37)\n.vue-color__slider__swatches\n  display flex\n  margin-top 20px\n.vue-color__slider__swatch\n  margin-right 1px\n  flex 1\n  width 20%\n  &:first-child\n    margin-right 1px\n    .vue-color__slider__swatch-picker\n      border-radius 2px 0px 0px 2px        \n  &:last-child\n    margin-right 0\n    .vue-color__slider__swatch-picker\n      border-radius 0px 2px 2px 0px\n.vue-color__slider__swatch-picker\n  cursor pointer\n  height 12px\n.vue-color__slider__swatch-picker--active\n  transform scaleY(1.8)\n  border-radius: 3.6px/2px\n",".vue-color__slider {\n  position: relative;\n  width: 410px;\n}\n.vue-color__slider__hue-warp {\n  height: 12px;\n  position: relative;\n}\n.vue-color__slider__hue-warp .vue-color__c-hue__picker {\n  width: 14px;\n  height: 14px;\n  border-radius: 6px;\n  transform: translate(-7px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__slider__swatches {\n  display: flex;\n  margin-top: 20px;\n}\n.vue-color__slider__swatch {\n  margin-right: 1px;\n  flex: 1;\n  width: 20%;\n}\n.vue-color__slider__swatch:first-child {\n  margin-right: 1px;\n}\n.vue-color__slider__swatch:first-child .vue-color__slider__swatch-picker {\n  border-radius: 2px 0px 0px 2px;\n}\n.vue-color__slider__swatch:last-child {\n  margin-right: 0;\n}\n.vue-color__slider__swatch:last-child .vue-color__slider__swatch-picker {\n  border-radius: 0px 2px 2px 0px;\n}\n.vue-color__slider__swatch-picker {\n  cursor: pointer;\n  height: 12px;\n}\n.vue-color__slider__swatch-picker--active {\n  transform: scaleY(1.8);\n  border-radius: 3.6px/2px;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__slider {\n  position: relative;\n  width: 410px;\n}\n.vue-color__slider__hue-warp {\n  height: 12px;\n  position: relative;\n}\n.vue-color__slider__hue-warp .vue-color__c-hue__picker {\n  width: 14px;\n  height: 14px;\n  border-radius: 6px;\n  -webkit-transform: translate(-7px, -2px);\n          transform: translate(-7px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__slider__swatches {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 20px;\n}\n.vue-color__slider__swatch {\n  margin-right: 1px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 20%;\n}\n.vue-color__slider__swatch:first-child {\n  margin-right: 1px;\n}\n.vue-color__slider__swatch:first-child .vue-color__slider__swatch-picker {\n  border-radius: 2px 0px 0px 2px;\n}\n.vue-color__slider__swatch:last-child {\n  margin-right: 0;\n}\n.vue-color__slider__swatch:last-child .vue-color__slider__swatch-picker {\n  border-radius: 0px 2px 2px 0px;\n}\n.vue-color__slider__swatch-picker {\n  cursor: pointer;\n  height: 12px;\n}\n.vue-color__slider__swatch-picker--active {\n  -webkit-transform: scaleY(1.8);\n          transform: scaleY(1.8);\n  border-radius: 3.6px/2px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Slider.vue","/./src/components/Slider.vue"],"names":[],"mappings":"AA4DA;EACE,mBAAA;EACA,aAAA;CC3DD;AD4DD;EACE,aAAA;EACA,mBAAA;CC1DD;AD2DC;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;EACA,0BAAA;EACA,yCAAA;CCzDH;AD0DD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,iBAAA;CCxDD;ADyDD;EACE,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,WAAA;CCvDD;ADwDC;EACE,kBAAA;CCtDH;ADuDG;EACE,+BAAA;CCrDL;ADsDC;EACE,gBAAA;CCpDH;ADqDG;EACE,+BAAA;CCnDL;ADoDD;EACE,gBAAA;EACA,aAAA;CClDD;ADmDD;EACE,+BAAA;UAAA,uBAAA;EACA,yBAAA;CCjDD","file":"Slider.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__slider\r\n  position relative\r\n  width 410px\r\n.vue-color__slider__hue-warp\r\n  height 12px\r\n  position relative\r\n  .vue-color__c-hue__picker\r\n    width 14px\r\n    height 14px\r\n    border-radius 6px\r\n    transform translate(-7px, -2px)\r\n    background-color rgb(248, 248, 248)\r\n    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.37)\r\n.vue-color__slider__swatches\r\n  display flex\r\n  margin-top 20px\r\n.vue-color__slider__swatch\r\n  margin-right 1px\r\n  flex 1\r\n  width 20%\r\n  &:first-child\r\n    margin-right 1px\r\n    .vue-color__slider__swatch-picker\r\n      border-radius 2px 0px 0px 2px        \r\n  &:last-child\r\n    margin-right 0\r\n    .vue-color__slider__swatch-picker\r\n      border-radius 0px 2px 2px 0px\r\n.vue-color__slider__swatch-picker\r\n  cursor pointer\r\n  height 12px\r\n.vue-color__slider__swatch-picker--active\r\n  transform scaleY(1.8)\r\n  border-radius: 3.6px/2px\r\n",".vue-color__slider {\n  position: relative;\n  width: 410px;\n}\n.vue-color__slider__hue-warp {\n  height: 12px;\n  position: relative;\n}\n.vue-color__slider__hue-warp .vue-color__c-hue__picker {\n  width: 14px;\n  height: 14px;\n  border-radius: 6px;\n  transform: translate(-7px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__slider__swatches {\n  display: flex;\n  margin-top: 20px;\n}\n.vue-color__slider__swatch {\n  margin-right: 1px;\n  flex: 1;\n  width: 20%;\n}\n.vue-color__slider__swatch:first-child {\n  margin-right: 1px;\n}\n.vue-color__slider__swatch:first-child .vue-color__slider__swatch-picker {\n  border-radius: 2px 0px 0px 2px;\n}\n.vue-color__slider__swatch:last-child {\n  margin-right: 0;\n}\n.vue-color__slider__swatch:last-child .vue-color__slider__swatch-picker {\n  border-radius: 0px 2px 2px 0px;\n}\n.vue-color__slider__swatch-picker {\n  cursor: pointer;\n  height: 12px;\n}\n.vue-color__slider__swatch-picker--active {\n  transform: scaleY(1.8);\n  border-radius: 3.6px/2px;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2207,23 +2239,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(25)
 	__vue_script__ = __webpack_require__(27)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/common/Hue.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\common\\Hue.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(28)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-68ae7358/Hue.vue"
+	  var id = "_v-70b84b02/Hue.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2266,7 +2305,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__c-hue {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  border-radius: 2px;\n}\n.vue-color__c-hue--horizontal {\n  background: -webkit-linear-gradient(left, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue--vertical {\n  background: -webkit-linear-gradient(bottom, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n  background: linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue__container {\n  cursor: pointer;\n  margin: 0 2px;\n  position: relative;\n  height: 100%;\n}\n.vue-color__c-hue__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-hue__picker {\n  cursor: pointer;\n  margin-top: 1px;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  -webkit-transform: translateX(-2px);\n          transform: translateX(-2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Hue.vue","/./src/components/common/Hue.vue"],"names":[],"mappings":"AAoHA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,mBAAA;CCnHD;ADoHD;EACE,gHAAA;EAAA,4GAAA;CClHD;ADmHD;EACE,kHAAA;EAAA,0GAAA;CCjHD;ADkHD;EACE,gBAAA;EACA,cAAA;EACA,mBAAA;EACA,aAAA;CChHD;ADiHD;EACE,WAAA;EACA,mBAAA;CC/GD;ADgHD;EACE,gBAAA;EACA,gBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;EACA,oCAAA;EACA,iBAAA;EACA,oCAAA;UAAA,4BAAA;CC9GD","file":"Hue.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__c-hue\n  position absolute\n  top 0px\n  right 0px\n  bottom 0px\n  left 0px\n  border-radius 2px\n.vue-color__c-hue--horizontal\n  background linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)\n.vue-color__c-hue--vertical\n  background linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)\n.vue-color__c-hue__container\n  cursor pointer\n  margin 0 2px\n  position relative\n  height 100%\n.vue-color__c-hue__pointer\n  z-index 2\n  position absolute\n.vue-color__c-hue__picker\n  cursor pointer\n  margin-top 1px\n  width 4px\n  border-radius 1px\n  height 8px\n  box-shadow 0 0 2px rgba(0, 0, 0, .6)\n  background #fff\n  transform translateX(-2px)\n",".vue-color__c-hue {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  border-radius: 2px;\n}\n.vue-color__c-hue--horizontal {\n  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue--vertical {\n  background: linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue__container {\n  cursor: pointer;\n  margin: 0 2px;\n  position: relative;\n  height: 100%;\n}\n.vue-color__c-hue__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-hue__picker {\n  cursor: pointer;\n  margin-top: 1px;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  transform: translateX(-2px);\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__c-hue {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  border-radius: 2px;\n}\n.vue-color__c-hue--horizontal {\n  background: -webkit-linear-gradient(left, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue--vertical {\n  background: -webkit-linear-gradient(bottom, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n  background: linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue__container {\n  cursor: pointer;\n  margin: 0 2px;\n  position: relative;\n  height: 100%;\n}\n.vue-color__c-hue__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-hue__picker {\n  cursor: pointer;\n  margin-top: 1px;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  -webkit-transform: translateX(-2px);\n          transform: translateX(-2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Hue.vue","/./src/components/common/Hue.vue"],"names":[],"mappings":"AAoHA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,mBAAA;CCnHD;ADoHD;EACE,gHAAA;EAAA,4GAAA;CClHD;ADmHD;EACE,kHAAA;EAAA,0GAAA;CCjHD;ADkHD;EACE,gBAAA;EACA,cAAA;EACA,mBAAA;EACA,aAAA;CChHD;ADiHD;EACE,WAAA;EACA,mBAAA;CC/GD;ADgHD;EACE,gBAAA;EACA,gBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;EACA,oCAAA;EACA,iBAAA;EACA,oCAAA;UAAA,4BAAA;CC9GD","file":"Hue.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__c-hue\r\n  position absolute\r\n  top 0px\r\n  right 0px\r\n  bottom 0px\r\n  left 0px\r\n  border-radius 2px\r\n.vue-color__c-hue--horizontal\r\n  background linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)\r\n.vue-color__c-hue--vertical\r\n  background linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)\r\n.vue-color__c-hue__container\r\n  cursor pointer\r\n  margin 0 2px\r\n  position relative\r\n  height 100%\r\n.vue-color__c-hue__pointer\r\n  z-index 2\r\n  position absolute\r\n.vue-color__c-hue__picker\r\n  cursor pointer\r\n  margin-top 1px\r\n  width 4px\r\n  border-radius 1px\r\n  height 8px\r\n  box-shadow 0 0 2px rgba(0, 0, 0, .6)\r\n  background #fff\r\n  transform translateX(-2px)\r\n",".vue-color__c-hue {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  border-radius: 2px;\n}\n.vue-color__c-hue--horizontal {\n  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue--vertical {\n  background: linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n}\n.vue-color__c-hue__container {\n  cursor: pointer;\n  margin: 0 2px;\n  position: relative;\n  height: 100%;\n}\n.vue-color__c-hue__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-hue__picker {\n  cursor: pointer;\n  margin-top: 1px;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  transform: translateX(-2px);\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2397,23 +2436,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(31)
 	__vue_script__ = __webpack_require__(33)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Swatches.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\components\\Swatches.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(35)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-71fa1aae/Swatches.vue"
+	  var id = "_v-3e59e8bc/Swatches.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2456,7 +2502,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__swatches {\n  width: 320px;\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__swatches__box {\n  padding: 16px 0 6px 16px;\n  overflow: hidden;\n}\n.vue-color__swatches__color-group {\n  padding-bottom: 10px;\n  width: 40px;\n  float: left;\n  margin-right: 10px;\n}\n.vue-color__swatches__color-it {\n  width: 40px;\n  height: 24px;\n  cursor: pointer;\n  background: #880e4f;\n  margin-bottom: 1px;\n  overflow: hidden;\n  border-radius: 2px 2px 0 0;\n}\n.vue-color__swatches__pick {\n  fill: #fff;\n  margin-left: 8px;\n  display: block;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Swatches.vue","/./src/components/Swatches.vue"],"names":[],"mappings":"AAqEA;EACE,aAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;EACA,oEAAA;CCpED;ADqED;EACE,yBAAA;EACA,iBAAA;CCnED;ADoED;EACE,qBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;CClED;ADmED;EACE,YAAA;EACA,aAAA;EACA,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,iBAAA;EAKA,2BAAA;CCjED;ADkED;EACE,WAAA;EACA,iBAAA;EACA,eAAA;CChED","file":"Swatches.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__swatches\n  width 320px\n  height 240px\n  overflow-y scroll\n  background-color #fff\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\n.vue-color__swatches__box\n  padding 16px 0 6px 16px\n  overflow hidden\n.vue-color__swatches__color-group\n  padding-bottom 10px\n  width 40px\n  float left\n  margin-right 10px\n.vue-color__swatches__color-it\n  width 40px\n  height 24px\n  cursor pointer\n  background #880e4f\n  margin-bottom 1px\n  overflow hidden\n  -ms-border-radius 2px 2px 0 0\n  -moz-border-radius 2px 2px 0 0\n  -o-border-radius 2px 2px 0 0\n  -webkit-border-radius 2px 2px 0 0\n  border-radius 2px 2px 0 0\n.vue-color__swatches__pick\n  fill: rgb(255, 255, 255);\n  margin-left: 8px;\n  display: block;\n\n",".vue-color__swatches {\n  width: 320px;\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__swatches__box {\n  padding: 16px 0 6px 16px;\n  overflow: hidden;\n}\n.vue-color__swatches__color-group {\n  padding-bottom: 10px;\n  width: 40px;\n  float: left;\n  margin-right: 10px;\n}\n.vue-color__swatches__color-it {\n  width: 40px;\n  height: 24px;\n  cursor: pointer;\n  background: #880e4f;\n  margin-bottom: 1px;\n  overflow: hidden;\n  -ms-border-radius: 2px 2px 0 0;\n  -moz-border-radius: 2px 2px 0 0;\n  -o-border-radius: 2px 2px 0 0;\n  -webkit-border-radius: 2px 2px 0 0;\n  border-radius: 2px 2px 0 0;\n}\n.vue-color__swatches__pick {\n  fill: #fff;\n  margin-left: 8px;\n  display: block;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__swatches {\n  width: 320px;\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__swatches__box {\n  padding: 16px 0 6px 16px;\n  overflow: hidden;\n}\n.vue-color__swatches__color-group {\n  padding-bottom: 10px;\n  width: 40px;\n  float: left;\n  margin-right: 10px;\n}\n.vue-color__swatches__color-it {\n  width: 40px;\n  height: 24px;\n  cursor: pointer;\n  background: #880e4f;\n  margin-bottom: 1px;\n  overflow: hidden;\n  border-radius: 2px 2px 0 0;\n}\n.vue-color__swatches__pick {\n  fill: #fff;\n  margin-left: 8px;\n  display: block;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Swatches.vue","/./src/components/Swatches.vue"],"names":[],"mappings":"AAqEA;EACE,aAAA;EACA,cAAA;EACA,mBAAA;EACA,uBAAA;EACA,oEAAA;CCpED;ADqED;EACE,yBAAA;EACA,iBAAA;CCnED;ADoED;EACE,qBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;CClED;ADmED;EACE,YAAA;EACA,aAAA;EACA,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,iBAAA;EAKA,2BAAA;CCjED;ADkED;EACE,WAAA;EACA,iBAAA;EACA,eAAA;CChED","file":"Swatches.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__swatches\r\n  width 320px\r\n  height 240px\r\n  overflow-y scroll\r\n  background-color #fff\r\n  box-shadow 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16)\r\n.vue-color__swatches__box\r\n  padding 16px 0 6px 16px\r\n  overflow hidden\r\n.vue-color__swatches__color-group\r\n  padding-bottom 10px\r\n  width 40px\r\n  float left\r\n  margin-right 10px\r\n.vue-color__swatches__color-it\r\n  width 40px\r\n  height 24px\r\n  cursor pointer\r\n  background #880e4f\r\n  margin-bottom 1px\r\n  overflow hidden\r\n  -ms-border-radius 2px 2px 0 0\r\n  -moz-border-radius 2px 2px 0 0\r\n  -o-border-radius 2px 2px 0 0\r\n  -webkit-border-radius 2px 2px 0 0\r\n  border-radius 2px 2px 0 0\r\n.vue-color__swatches__pick\r\n  fill: rgb(255, 255, 255);\r\n  margin-left: 8px;\r\n  display: block;\r\n\r\n",".vue-color__swatches {\n  width: 320px;\n  height: 240px;\n  overflow-y: scroll;\n  background-color: #fff;\n  box-shadow: 0 2px 10px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.16);\n}\n.vue-color__swatches__box {\n  padding: 16px 0 6px 16px;\n  overflow: hidden;\n}\n.vue-color__swatches__color-group {\n  padding-bottom: 10px;\n  width: 40px;\n  float: left;\n  margin-right: 10px;\n}\n.vue-color__swatches__color-it {\n  width: 40px;\n  height: 24px;\n  cursor: pointer;\n  background: #880e4f;\n  margin-bottom: 1px;\n  overflow: hidden;\n  -ms-border-radius: 2px 2px 0 0;\n  -moz-border-radius: 2px 2px 0 0;\n  -o-border-radius: 2px 2px 0 0;\n  -webkit-border-radius: 2px 2px 0 0;\n  border-radius: 2px 2px 0 0;\n}\n.vue-color__swatches__pick {\n  fill: #fff;\n  margin-left: 8px;\n  display: block;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2533,7 +2579,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    root.materialColors = factory();
 	  }
 	})(this, function() {
-	  return {"red":{"50":"#ffebee","100":"#ffcdd2","200":"#ef9a9a","300":"#e57373","400":"#ef5350","500":"#f44336","600":"#e53935","700":"#d32f2f","800":"#c62828","900":"#b71c1c","a100":"#ff8a80","a200":"#ff5252","a400":"#ff1744","a700":"#d50000"},"pink":{"50":"#fce4ec","100":"#f8bbd0","200":"#f48fb1","300":"#f06292","400":"#ec407a","500":"#e91e63","600":"#d81b60","700":"#c2185b","800":"#ad1457","900":"#880e4f","a100":"#ff80ab","a200":"#ff4081","a400":"#f50057","a700":"#c51162"},"purple":{"50":"#f3e5f5","100":"#e1bee7","200":"#ce93d8","300":"#ba68c8","400":"#ab47bc","500":"#9c27b0","600":"#8e24aa","700":"#7b1fa2","800":"#6a1b9a","900":"#4a148c","a100":"#ea80fc","a200":"#e040fb","a400":"#d500f9","a700":"#aa00ff"},"deepPurple":{"50":"#ede7f6","100":"#d1c4e9","200":"#b39ddb","300":"#9575cd","400":"#7e57c2","500":"#673ab7","600":"#5e35b1","700":"#512da8","800":"#4527a0","900":"#311b92","a100":"#b388ff","a200":"#7c4dff","a400":"#651fff","a700":"#6200ea"},"indigo":{"50":"#e8eaf6","100":"#c5cae9","200":"#9fa8da","300":"#7986cb","400":"#5c6bc0","500":"#3f51b5","600":"#3949ab","700":"#303f9f","800":"#283593","900":"#1a237e","a100":"#8c9eff","a200":"#536dfe","a400":"#3d5afe","a700":"#304ffe"},"blue":{"50":"#e3f2fd","100":"#bbdefb","200":"#90caf9","300":"#64b5f6","400":"#42a5f5","500":"#2196f3","600":"#1e88e5","700":"#1976d2","800":"#1565c0","900":"#0d47a1","a100":"#82b1ff","a200":"#448aff","a400":"#2979ff","a700":"#2962ff"},"lightBlue":{"50":"#e1f5fe","100":"#b3e5fc","200":"#81d4fa","300":"#4fc3f7","400":"#29b6f6","500":"#03a9f4","600":"#039be5","700":"#0288d1","800":"#0277bd","900":"#01579b","a100":"#80d8ff","a200":"#40c4ff","a400":"#00b0ff","a700":"#0091ea"},"cyan":{"50":"#e0f7fa","100":"#b2ebf2","200":"#80deea","300":"#4dd0e1","400":"#26c6da","500":"#00bcd4","600":"#00acc1","700":"#0097a7","800":"#00838f","900":"#006064","a100":"#84ffff","a200":"#18ffff","a400":"#00e5ff","a700":"#00b8d4"},"teal":{"50":"#e0f2f1","100":"#b2dfdb","200":"#80cbc4","300":"#4db6ac","400":"#26a69a","500":"#009688","600":"#00897b","700":"#00796b","800":"#00695c","900":"#004d40","a100":"#a7ffeb","a200":"#64ffda","a400":"#1de9b6","a700":"#00bfa5"},"green":{"50":"#e8f5e9","100":"#c8e6c9","200":"#a5d6a7","300":"#81c784","400":"#66bb6a","500":"#4caf50","600":"#43a047","700":"#388e3c","800":"#2e7d32","900":"#1b5e20","a100":"#b9f6ca","a200":"#69f0ae","a400":"#00e676","a700":"#00c853"},"lightGreen":{"50":"#f1f8e9","100":"#dcedc8","200":"#c5e1a5","300":"#aed581","400":"#9ccc65","500":"#8bc34a","600":"#7cb342","700":"#689f38","800":"#558b2f","900":"#33691e","a100":"#ccff90","a200":"#b2ff59","a400":"#76ff03","a700":"#64dd17"},"lime":{"50":"#f9fbe7","100":"#f0f4c3","200":"#e6ee9c","300":"#dce775","400":"#d4e157","500":"#cddc39","600":"#c0ca33","700":"#afb42b","800":"#9e9d24","900":"#827717","a100":"#f4ff81","a200":"#eeff41","a400":"#c6ff00","a700":"#aeea00"},"yellow":{"50":"#fffde7","100":"#fff9c4","200":"#fff59d","300":"#fff176","400":"#ffee58","500":"#ffeb3b","600":"#fdd835","700":"#fbc02d","800":"#f9a825","900":"#f57f17","a100":"#ffff8d","a200":"#ffff00","a400":"#ffea00","a700":"#ffd600"},"amber":{"50":"#fff8e1","100":"#ffecb3","200":"#ffe082","300":"#ffd54f","400":"#ffca28","500":"#ffc107","600":"#ffb300","700":"#ffa000","800":"#ff8f00","900":"#ff6f00","a100":"#ffe57f","a200":"#ffd740","a400":"#ffc400","a700":"#ffab00"},"orange":{"50":"#fff3e0","100":"#ffe0b2","200":"#ffcc80","300":"#ffb74d","400":"#ffa726","500":"#ff9800","600":"#fb8c00","700":"#f57c00","800":"#ef6c00","900":"#e65100","a100":"#ffd180","a200":"#ffab40","a400":"#ff9100","a700":"#ff6d00"},"deepOrange":{"50":"#fbe9e7","100":"#ffccbc","200":"#ffab91","300":"#ff8a65","400":"#ff7043","500":"#ff5722","600":"#f4511e","700":"#e64a19","800":"#d84315","900":"#bf360c","a100":"#ff9e80","a200":"#ff6e40","a400":"#ff3d00","a700":"#dd2c00"},"brown":{"50":"#efebe9","100":"#d7ccc8","200":"#bcaaa4","300":"#a1887f","400":"#8d6e63","500":"#795548","600":"#6d4c41","700":"#5d4037","800":"#4e342e","900":"#3e2723"},"grey":{"50":"#fafafa","100":"#f5f5f5","200":"#eeeeee","300":"#e0e0e0","400":"#bdbdbd","500":"#9e9e9e","600":"#757575","700":"#616161","800":"#424242","900":"#212121"},"blueGrey":{"50":"#eceff1","100":"#cfd8dc","200":"#b0bec5","300":"#90a4ae","400":"#78909c","500":"#607d8b","600":"#546e7a","700":"#455a64","800":"#37474f","900":"#263238"},"white":"#ffffff","black":"#000000"};
+	  return {"red":{"50":"#ffebee","100":"#ffcdd2","200":"#ef9a9a","300":"#e57373","400":"#ef5350","500":"#f44336","600":"#e53935","700":"#d32f2f","800":"#c62828","900":"#b71c1c","a100":"#ff8a80","a200":"#ff5252","a400":"#ff1744","a700":"#d50000"},"pink":{"50":"#fce4ec","100":"#f8bbd0","200":"#f48fb1","300":"#f06292","400":"#ec407a","500":"#e91e63","600":"#d81b60","700":"#c2185b","800":"#ad1457","900":"#880e4f","a100":"#ff80ab","a200":"#ff4081","a400":"#f50057","a700":"#c51162"},"purple":{"50":"#f3e5f5","100":"#e1bee7","200":"#ce93d8","300":"#ba68c8","400":"#ab47bc","500":"#9c27b0","600":"#8e24aa","700":"#7b1fa2","800":"#6a1b9a","900":"#4a148c","a100":"#ea80fc","a200":"#e040fb","a400":"#d500f9","a700":"#aa00ff"},"deepPurple":{"50":"#ede7f6","100":"#d1c4e9","200":"#b39ddb","300":"#9575cd","400":"#7e57c2","500":"#673ab7","600":"#5e35b1","700":"#512da8","800":"#4527a0","900":"#311b92","a100":"#b388ff","a200":"#7c4dff","a400":"#651fff","a700":"#6200ea"},"indigo":{"50":"#e8eaf6","100":"#c5cae9","200":"#9fa8da","300":"#7986cb","400":"#5c6bc0","500":"#3f51b5","600":"#3949ab","700":"#303f9f","800":"#283593","900":"#1a237e","a100":"#8c9eff","a200":"#536dfe","a400":"#3d5afe","a700":"#304ffe"},"blue":{"50":"#e3f2fd","100":"#bbdefb","200":"#90caf9","300":"#64b5f6","400":"#42a5f5","500":"#2196f3","600":"#1e88e5","700":"#1976d2","800":"#1565c0","900":"#0d47a1","a100":"#82b1ff","a200":"#448aff","a400":"#2979ff","a700":"#2962ff"},"lightBlue":{"50":"#e1f5fe","100":"#b3e5fc","200":"#81d4fa","300":"#4fc3f7","400":"#29b6f6","500":"#03a9f4","600":"#039be5","700":"#0288d1","800":"#0277bd","900":"#01579b","a100":"#80d8ff","a200":"#40c4ff","a400":"#00b0ff","a700":"#0091ea"},"cyan":{"50":"#e0f7fa","100":"#b2ebf2","200":"#80deea","300":"#4dd0e1","400":"#26c6da","500":"#00bcd4","600":"#00acc1","700":"#0097a7","800":"#00838f","900":"#006064","a100":"#84ffff","a200":"#18ffff","a400":"#00e5ff","a700":"#00b8d4"},"teal":{"50":"#e0f2f1","100":"#b2dfdb","200":"#80cbc4","300":"#4db6ac","400":"#26a69a","500":"#009688","600":"#00897b","700":"#00796b","800":"#00695c","900":"#004d40","a100":"#a7ffeb","a200":"#64ffda","a400":"#1de9b6","a700":"#00bfa5"},"green":{"50":"#e8f5e9","100":"#c8e6c9","200":"#a5d6a7","300":"#81c784","400":"#66bb6a","500":"#4caf50","600":"#43a047","700":"#388e3c","800":"#2e7d32","900":"#1b5e20","a100":"#b9f6ca","a200":"#69f0ae","a400":"#00e676","a700":"#00c853"},"lightGreen":{"50":"#f1f8e9","100":"#dcedc8","200":"#c5e1a5","300":"#aed581","400":"#9ccc65","500":"#8bc34a","600":"#7cb342","700":"#689f38","800":"#558b2f","900":"#33691e","a100":"#ccff90","a200":"#b2ff59","a400":"#76ff03","a700":"#64dd17"},"lime":{"50":"#f9fbe7","100":"#f0f4c3","200":"#e6ee9c","300":"#dce775","400":"#d4e157","500":"#cddc39","600":"#c0ca33","700":"#afb42b","800":"#9e9d24","900":"#827717","a100":"#f4ff81","a200":"#eeff41","a400":"#c6ff00","a700":"#aeea00"},"yellow":{"50":"#fffde7","100":"#fff9c4","200":"#fff59d","300":"#fff176","400":"#ffee58","500":"#ffeb3b","600":"#fdd835","700":"#fbc02d","800":"#f9a825","900":"#f57f17","a100":"#ffff8d","a200":"#ffff00","a400":"#ffea00","a700":"#ffd600"},"amber":{"50":"#fff8e1","100":"#ffecb3","200":"#ffe082","300":"#ffd54f","400":"#ffca28","500":"#ffc107","600":"#ffb300","700":"#ffa000","800":"#ff8f00","900":"#ff6f00","a100":"#ffe57f","a200":"#ffd740","a400":"#ffc400","a700":"#ffab00"},"orange":{"50":"#fff3e0","100":"#ffe0b2","200":"#ffcc80","300":"#ffb74d","400":"#ffa726","500":"#ff9800","600":"#fb8c00","700":"#f57c00","800":"#ef6c00","900":"#e65100","a100":"#ffd180","a200":"#ffab40","a400":"#ff9100","a700":"#ff6d00"},"deepOrange":{"50":"#fbe9e7","100":"#ffccbc","200":"#ffab91","300":"#ff8a65","400":"#ff7043","500":"#ff5722","600":"#f4511e","700":"#e64a19","800":"#d84315","900":"#bf360c","a100":"#ff9e80","a200":"#ff6e40","a400":"#ff3d00","a700":"#dd2c00"},"brown":{"50":"#efebe9","100":"#d7ccc8","200":"#bcaaa4","300":"#a1887f","400":"#8d6e63","500":"#795548","600":"#6d4c41","700":"#5d4037","800":"#4e342e","900":"#3e2723"},"grey":{"50":"#fafafa","100":"#f5f5f5","200":"#eeeeee","300":"#e0e0e0","400":"#bdbdbd","500":"#9e9e9e","600":"#757575","700":"#616161","800":"#424242","900":"#212121"},"blueGrey":{"50":"#eceff1","100":"#cfd8dc","200":"#b0bec5","300":"#90a4ae","400":"#78909c","500":"#607d8b","600":"#546e7a","700":"#455a64","800":"#37474f","900":"#263238"},"darkText":{"primary":"rgba(0, 0, 0, 0.87)","secondary":"rgba(0, 0, 0, 0.54)","disabled":"rgba(0, 0, 0, 0.38)","dividers":"rgba(0, 0, 0, 0.12)"},"lightText":{"primary":"rgba(255, 255, 255, 1)","secondary":"rgba(255, 255, 255, 0.7)","disabled":"rgba(255, 255, 255, 0.5)","dividers":"rgba(255, 255, 255, 0.12)"},"darkIcons":{"active":"rgba(0, 0, 0, 0.54)","inactive":"rgba(0, 0, 0, 0.38)"},"lightIcons":{"active":"rgba(255, 255, 255, 1)","inactive":"rgba(255, 255, 255, 0.5)"},"white":"#ffffff","black":"#000000"};
 	});
 
 
@@ -2548,23 +2594,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(37)
 	__vue_script__ = __webpack_require__(39)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Photoshop.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(57)
+	  console.warn("[vue-loader] src\\components\\Photoshop.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(56)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-8fc7edd8/Photoshop.vue"
+	  var id = "_v-246136a0/Photoshop.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2607,7 +2660,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-colors__photoshop {\n  background: #dcdcdc;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.15);\n  box-sizing: initial;\n  width: 513px;\n  font-family: Roboto;\n}\n.vue-colors__photoshop__head {\n  background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #d4d4d4 100%);\n  background-image: linear-gradient(-180deg, #f0f0f0 0%, #d4d4d4 100%);\n  border-bottom: 1px solid #b1b1b1;\n  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), inset 0 -1px 0 0 rgba(0,0,0,0.02);\n  height: 23px;\n  line-height: 24px;\n  border-radius: 4px 4px 0 0;\n  font-size: 13px;\n  color: #4d4d4d;\n  text-align: center;\n}\n.vue-colors__photoshop__body {\n  padding: 15px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-colors__photoshop__saturation-wrap {\n  width: 256px;\n  height: 256px;\n  position: relative;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n  overflow: hidden;\n}\n.vue-colors__photoshop__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-colors__photoshop__hue-wrap {\n  position: relative;\n  height: 256px;\n  width: 19px;\n  margin-left: 10px;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n}\n.vue-colors__photoshop__hue-pointer {\n  position: relative;\n}\n.vue-colors__photoshop__hue-pointer--left,\n.vue-colors__photoshop__hue-pointer--right {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 5px 0 5px 8px;\n  border-color: transparent transparent transparent #555;\n}\n.vue-colors__photoshop__hue-pointer--left:after,\n.vue-colors__photoshop__hue-pointer--right:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 4px 0 4px 6px;\n  border-color: transparent transparent transparent #fff;\n  position: absolute;\n  top: 1px;\n  left: 1px;\n  -webkit-transform: translate(-8px, -5px);\n          transform: translate(-8px, -5px);\n}\n.vue-colors__photoshop__hue-pointer--left {\n  -webkit-transform: translate(-13px, -4px);\n          transform: translate(-13px, -4px);\n}\n.vue-colors__photoshop__hue-pointer--right {\n  -webkit-transform: translate(20px, -4px) rotate(180deg);\n          transform: translate(20px, -4px) rotate(180deg);\n}\n.vue-colors__photoshop__controls {\n  width: 180px;\n  margin-left: 10px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-colors__photoshop__actions {\n  margin-left: 20px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-colors__photoshop__ac-btn {\n  cursor: pointer;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #e6e6e6 100%);\n  background-image: linear-gradient(-180deg, #fff 0%, #e6e6e6 100%);\n  border: 1px solid #878787;\n  border-radius: 2px;\n  height: 20px;\n  box-shadow: 0 1px 0 0 #eaeaea;\n  font-size: 14px;\n  color: #000;\n  line-height: 20px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n.vue-colors__photoshop__previews {\n  width: 60px;\n}\n.vue-colors__photoshop__previews__swatches {\n  border: 1px solid #b3b3b3;\n  border-bottom: 1px solid #f0f0f0;\n  margin-bottom: 2px;\n  margin-top: 1px;\n}\n.vue-colors__photoshop__previews__pr-color {\n  height: 34px;\n  box-shadow: inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000;\n}\n.vue-colors__photoshop__previews__label {\n  font-size: 14px;\n  color: #000;\n  text-align: center;\n}\n.vue-colors__photoshop__fields {\n  padding-top: 5px;\n  padding-bottom: 9px;\n  width: 80px;\n  position: relative;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__input {\n  margin-left: 40%;\n  width: 40%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 5px;\n  font-size: 13px;\n  padding-left: 3px;\n  margin-right: 10px;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__label {\n  top: 0;\n  left: 0;\n  width: 34px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n  position: absolute;\n}\n.vue-colors__photoshop__fields__divider {\n  height: 5px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__input {\n  margin-left: 20%;\n  width: 80%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 6px;\n  font-size: 13px;\n  padding-left: 3px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 14px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Photoshop.vue","/./src/components/Photoshop.vue"],"names":[],"mappings":"AAwHA;EACE,oBAAA;EACA,mBAAA;EACA,oEAAA;EACA,oBAAA;EACA,aAAA;EACA,oBAAA;CCvHD;ADwHD;EACE,yEAAA;EAAA,qEAAA;EACA,iCAAA;EACA,qFAAA;EACA,aAAA;EACA,kBAAA;EACA,2BAAA;EACA,gBAAA;EACA,eAAA;EACA,mBAAA;CCtHD;ADuHD;EACE,cAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CCrHD;ADsHD;EACE,aAAA;EACA,cAAA;EACA,mBAAA;EACA,0BAAA;EACA,iCAAA;EACA,iBAAA;CCpHD;ADqHC;EACE,YAAA;EACA,aAAA;CCnHH;ADoHD;EACE,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,0BAAA;EACA,iCAAA;CClHD;ADmHD;EACE,mBAAA;CCjHD;ADkHD;;EAEE,mBAAA;EACA,SAAA;EACA,UAAA;EACA,oBAAA;EACA,4BAAA;EACA,uDAAA;CChHD;ADiHC;;EACE,YAAA;EACA,SAAA;EACA,UAAA;EACA,oBAAA;EACA,4BAAA;EACA,uDAAA;EACA,mBAAA;EACA,SAAA;EACA,UAAA;EACA,yCAAA;UAAA,iCAAA;CC9GH;AD+GD;EACE,0CAAA;UAAA,kCAAA;CC7GD;AD8GD;EACE,wDAAA;UAAA,gDAAA;CC5GD;AD6GD;EACE,aAAA;EACA,kBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CC3GD;AD4GD;EACE,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CC1GD;AD2GD;EACE,gBAAA;EACA,sEAAA;EAAA,kEAAA;EACA,0BAAA;EACA,mBAAA;EACA,aAAA;EACA,8BAAA;EACA,gBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,oBAAA;CCzGD;AD0GD;EACE,YAAA;CCxGD;ADyGD;EACE,0BAAA;EACA,iCAAA;EACA,mBAAA;EACA,gBAAA;CCvGD;ADwGD;EACE,aAAA;EACA,wEAAA;CCtGD;ADuGD;EACE,gBAAA;EACA,YAAA;EACA,mBAAA;CCrGD;ADsGD;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,mBAAA;CCpGD;ADqGC;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,+DAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;CCnGH;ADoGC;EACE,OAAA;EACA,QAAA;EACA,YAAA;EACA,0BAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;CClGH;ADmGD;EACE,YAAA;CCjGD;ADmGC;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,+DAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CCjGH;ADkGC;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,0BAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;CChGH","file":"Photoshop.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-colors__photoshop\n  background #DCDCDC\n  border-radius 4px\n  box-shadow 0 0 0 1px rgba(0,0,0,.25), 0 8px 16px rgba(0,0,0,.15)\n  box-sizing initial\n  width 513px\n  font-family Roboto\n.vue-colors__photoshop__head\n  background-image linear-gradient(-180deg, #F0F0F0 0%, #D4D4D4 100%)\n  border-bottom 1px solid #B1B1B1\n  box-shadow inset 0 1px 0 0 rgba(255,255,255,.2), inset 0 -1px 0 0 rgba(0,0,0,.02)\n  height 23px\n  line-height 24px\n  border-radius 4px 4px 0 0\n  font-size 13px\n  color #4D4D4D\n  text-align center\n.vue-colors__photoshop__body\n  padding 15px\n  display flex\n.vue-colors__photoshop__saturation-wrap\n  width 256px\n  height 256px\n  position relative\n  border 2px solid #B3B3B3\n  border-bottom 2px solid #F0F0F0\n  overflow hidden\n  .vue-color__saturation--circle\n    width 12px\n    height 12px\n.vue-colors__photoshop__hue-wrap\n  position relative\n  height 256px\n  width 19px\n  margin-left 10px\n  border 2px solid #B3B3B3\n  border-bottom 2px solid #F0F0F0\n.vue-colors__photoshop__hue-pointer\n  position relative\n.vue-colors__photoshop__hue-pointer--left\n.vue-colors__photoshop__hue-pointer--right\n  position absolute\n  width 0\n  height 0\n  border-style solid\n  border-width 5px 0 5px 8px\n  border-color transparent transparent transparent #555\n  &:after\n    content \"\"\n    width 0\n    height 0\n    border-style solid\n    border-width 4px 0 4px 6px\n    border-color transparent transparent transparent #fff\n    position absolute\n    top 1px\n    left 1px\n    transform translate(-8px, -5px)\n.vue-colors__photoshop__hue-pointer--left\n  transform translate(-13px, -4px)\n.vue-colors__photoshop__hue-pointer--right\n  transform translate(20px, -4px) rotate(180deg)\n.vue-colors__photoshop__controls\n  width 180px\n  margin-left 10px\n  display flex\n.vue-colors__photoshop__actions\n  margin-left 20px\n  flex 1\n.vue-colors__photoshop__ac-btn\n  cursor pointer\n  background-image linear-gradient(-180deg, #FFFFFF 0%, #E6E6E6 100%)\n  border 1px solid #878787\n  border-radius 2px\n  height 20px\n  box-shadow 0 1px 0 0 #EAEAEA\n  font-size 14px\n  color #000\n  line-height 20px\n  text-align center\n  margin-bottom 10px\n.vue-colors__photoshop__previews\n  width 60px\n.vue-colors__photoshop__previews__swatches\n  border 1px solid #B3B3B3\n  border-bottom 1px solid #F0F0F0\n  margin-bottom 2px\n  margin-top 1px\n.vue-colors__photoshop__previews__pr-color\n  height 34px\n  box-shadow inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000\n.vue-colors__photoshop__previews__label\n  font-size 14px\n  color #000\n  text-align center\n.vue-colors__photoshop__fields\n  padding-top 5px\n  padding-bottom 9px\n  width 80px\n  position relative\n  .vue-color__editable-input__input\n    margin-left 40%\n    width 40%\n    height 18px\n    border 1px solid #888888\n    box-shadow inset 0 1px 1px rgba(0,0,0,.1), 0 1px 0 0 #ECECEC\n    margin-bottom 5px\n    font-size 13px\n    padding-left 3px\n    margin-right 10px\n  .vue-color__editable-input__label\n    top 0\n    left 0\n    width 34px\n    text-transform uppercase\n    font-size 13px\n    height 18px\n    line-height 22px\n    position absolute\n.vue-colors__photoshop__fields__divider\n  height 5px\n.vue-colors__photoshop__fields__hex\n  .vue-color__editable-input__input\n    margin-left 20%\n    width 80%\n    height 18px\n    border 1px solid #888888\n    box-shadow inset 0 1px 1px rgba(0,0,0,.1), 0 1px 0 0 #ECECEC\n    margin-bottom 6px\n    font-size 13px\n    padding-left 3px\n  .vue-color__editable-input__label\n    position absolute\n    top 0\n    left 0\n    width 14px\n    text-transform uppercase\n    font-size 13px\n    height 18px\n    line-height 22px\n",".vue-colors__photoshop {\n  background: #dcdcdc;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.15);\n  box-sizing: initial;\n  width: 513px;\n  font-family: Roboto;\n}\n.vue-colors__photoshop__head {\n  background-image: linear-gradient(-180deg, #f0f0f0 0%, #d4d4d4 100%);\n  border-bottom: 1px solid #b1b1b1;\n  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), inset 0 -1px 0 0 rgba(0,0,0,0.02);\n  height: 23px;\n  line-height: 24px;\n  border-radius: 4px 4px 0 0;\n  font-size: 13px;\n  color: #4d4d4d;\n  text-align: center;\n}\n.vue-colors__photoshop__body {\n  padding: 15px;\n  display: flex;\n}\n.vue-colors__photoshop__saturation-wrap {\n  width: 256px;\n  height: 256px;\n  position: relative;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n  overflow: hidden;\n}\n.vue-colors__photoshop__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-colors__photoshop__hue-wrap {\n  position: relative;\n  height: 256px;\n  width: 19px;\n  margin-left: 10px;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n}\n.vue-colors__photoshop__hue-pointer {\n  position: relative;\n}\n.vue-colors__photoshop__hue-pointer--left,\n.vue-colors__photoshop__hue-pointer--right {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 5px 0 5px 8px;\n  border-color: transparent transparent transparent #555;\n}\n.vue-colors__photoshop__hue-pointer--left:after,\n.vue-colors__photoshop__hue-pointer--right:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 4px 0 4px 6px;\n  border-color: transparent transparent transparent #fff;\n  position: absolute;\n  top: 1px;\n  left: 1px;\n  transform: translate(-8px, -5px);\n}\n.vue-colors__photoshop__hue-pointer--left {\n  transform: translate(-13px, -4px);\n}\n.vue-colors__photoshop__hue-pointer--right {\n  transform: translate(20px, -4px) rotate(180deg);\n}\n.vue-colors__photoshop__controls {\n  width: 180px;\n  margin-left: 10px;\n  display: flex;\n}\n.vue-colors__photoshop__actions {\n  margin-left: 20px;\n  flex: 1;\n}\n.vue-colors__photoshop__ac-btn {\n  cursor: pointer;\n  background-image: linear-gradient(-180deg, #fff 0%, #e6e6e6 100%);\n  border: 1px solid #878787;\n  border-radius: 2px;\n  height: 20px;\n  box-shadow: 0 1px 0 0 #eaeaea;\n  font-size: 14px;\n  color: #000;\n  line-height: 20px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n.vue-colors__photoshop__previews {\n  width: 60px;\n}\n.vue-colors__photoshop__previews__swatches {\n  border: 1px solid #b3b3b3;\n  border-bottom: 1px solid #f0f0f0;\n  margin-bottom: 2px;\n  margin-top: 1px;\n}\n.vue-colors__photoshop__previews__pr-color {\n  height: 34px;\n  box-shadow: inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000;\n}\n.vue-colors__photoshop__previews__label {\n  font-size: 14px;\n  color: #000;\n  text-align: center;\n}\n.vue-colors__photoshop__fields {\n  padding-top: 5px;\n  padding-bottom: 9px;\n  width: 80px;\n  position: relative;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__input {\n  margin-left: 40%;\n  width: 40%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 5px;\n  font-size: 13px;\n  padding-left: 3px;\n  margin-right: 10px;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__label {\n  top: 0;\n  left: 0;\n  width: 34px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n  position: absolute;\n}\n.vue-colors__photoshop__fields__divider {\n  height: 5px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__input {\n  margin-left: 20%;\n  width: 80%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 6px;\n  font-size: 13px;\n  padding-left: 3px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 14px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-colors__photoshop {\n  background: #dcdcdc;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.15);\n  box-sizing: initial;\n  width: 513px;\n  font-family: Roboto;\n}\n.vue-colors__photoshop__head {\n  background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #d4d4d4 100%);\n  background-image: linear-gradient(-180deg, #f0f0f0 0%, #d4d4d4 100%);\n  border-bottom: 1px solid #b1b1b1;\n  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), inset 0 -1px 0 0 rgba(0,0,0,0.02);\n  height: 23px;\n  line-height: 24px;\n  border-radius: 4px 4px 0 0;\n  font-size: 13px;\n  color: #4d4d4d;\n  text-align: center;\n}\n.vue-colors__photoshop__body {\n  padding: 15px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-colors__photoshop__saturation-wrap {\n  width: 256px;\n  height: 256px;\n  position: relative;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n  overflow: hidden;\n}\n.vue-colors__photoshop__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-colors__photoshop__hue-wrap {\n  position: relative;\n  height: 256px;\n  width: 19px;\n  margin-left: 10px;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n}\n.vue-colors__photoshop__hue-pointer {\n  position: relative;\n}\n.vue-colors__photoshop__hue-pointer--left,\n.vue-colors__photoshop__hue-pointer--right {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 5px 0 5px 8px;\n  border-color: transparent transparent transparent #555;\n}\n.vue-colors__photoshop__hue-pointer--left:after,\n.vue-colors__photoshop__hue-pointer--right:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 4px 0 4px 6px;\n  border-color: transparent transparent transparent #fff;\n  position: absolute;\n  top: 1px;\n  left: 1px;\n  -webkit-transform: translate(-8px, -5px);\n          transform: translate(-8px, -5px);\n}\n.vue-colors__photoshop__hue-pointer--left {\n  -webkit-transform: translate(-13px, -4px);\n          transform: translate(-13px, -4px);\n}\n.vue-colors__photoshop__hue-pointer--right {\n  -webkit-transform: translate(20px, -4px) rotate(180deg);\n          transform: translate(20px, -4px) rotate(180deg);\n}\n.vue-colors__photoshop__controls {\n  width: 180px;\n  margin-left: 10px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-colors__photoshop__actions {\n  margin-left: 20px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-colors__photoshop__ac-btn {\n  cursor: pointer;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #e6e6e6 100%);\n  background-image: linear-gradient(-180deg, #fff 0%, #e6e6e6 100%);\n  border: 1px solid #878787;\n  border-radius: 2px;\n  height: 20px;\n  box-shadow: 0 1px 0 0 #eaeaea;\n  font-size: 14px;\n  color: #000;\n  line-height: 20px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n.vue-colors__photoshop__previews {\n  width: 60px;\n}\n.vue-colors__photoshop__previews__swatches {\n  border: 1px solid #b3b3b3;\n  border-bottom: 1px solid #f0f0f0;\n  margin-bottom: 2px;\n  margin-top: 1px;\n}\n.vue-colors__photoshop__previews__pr-color {\n  height: 34px;\n  box-shadow: inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000;\n}\n.vue-colors__photoshop__previews__label {\n  font-size: 14px;\n  color: #000;\n  text-align: center;\n}\n.vue-colors__photoshop__fields {\n  padding-top: 5px;\n  padding-bottom: 9px;\n  width: 80px;\n  position: relative;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__input {\n  margin-left: 40%;\n  width: 40%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 5px;\n  font-size: 13px;\n  padding-left: 3px;\n  margin-right: 10px;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__label {\n  top: 0;\n  left: 0;\n  width: 34px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n  position: absolute;\n}\n.vue-colors__photoshop__fields__divider {\n  height: 5px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__input {\n  margin-left: 20%;\n  width: 80%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 6px;\n  font-size: 13px;\n  padding-left: 3px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 14px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Photoshop.vue","/./src/components/Photoshop.vue"],"names":[],"mappings":"AAwHA;EACE,oBAAA;EACA,mBAAA;EACA,oEAAA;EACA,oBAAA;EACA,aAAA;EACA,oBAAA;CCvHD;ADwHD;EACE,yEAAA;EAAA,qEAAA;EACA,iCAAA;EACA,qFAAA;EACA,aAAA;EACA,kBAAA;EACA,2BAAA;EACA,gBAAA;EACA,eAAA;EACA,mBAAA;CCtHD;ADuHD;EACE,cAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CCrHD;ADsHD;EACE,aAAA;EACA,cAAA;EACA,mBAAA;EACA,0BAAA;EACA,iCAAA;EACA,iBAAA;CCpHD;ADqHC;EACE,YAAA;EACA,aAAA;CCnHH;ADoHD;EACE,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,0BAAA;EACA,iCAAA;CClHD;ADmHD;EACE,mBAAA;CCjHD;ADkHD;;EAEE,mBAAA;EACA,SAAA;EACA,UAAA;EACA,oBAAA;EACA,4BAAA;EACA,uDAAA;CChHD;ADiHC;;EACE,YAAA;EACA,SAAA;EACA,UAAA;EACA,oBAAA;EACA,4BAAA;EACA,uDAAA;EACA,mBAAA;EACA,SAAA;EACA,UAAA;EACA,yCAAA;UAAA,iCAAA;CC9GH;AD+GD;EACE,0CAAA;UAAA,kCAAA;CC7GD;AD8GD;EACE,wDAAA;UAAA,gDAAA;CC5GD;AD6GD;EACE,aAAA;EACA,kBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CC3GD;AD4GD;EACE,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CC1GD;AD2GD;EACE,gBAAA;EACA,sEAAA;EAAA,kEAAA;EACA,0BAAA;EACA,mBAAA;EACA,aAAA;EACA,8BAAA;EACA,gBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,oBAAA;CCzGD;AD0GD;EACE,YAAA;CCxGD;ADyGD;EACE,0BAAA;EACA,iCAAA;EACA,mBAAA;EACA,gBAAA;CCvGD;ADwGD;EACE,aAAA;EACA,wEAAA;CCtGD;ADuGD;EACE,gBAAA;EACA,YAAA;EACA,mBAAA;CCrGD;ADsGD;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,mBAAA;CCpGD;ADqGC;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,+DAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;CCnGH;ADoGC;EACE,OAAA;EACA,QAAA;EACA,YAAA;EACA,0BAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;CClGH;ADmGD;EACE,YAAA;CCjGD;ADmGC;EACE,iBAAA;EACA,WAAA;EACA,aAAA;EACA,uBAAA;EACA,+DAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;CCjGH;ADkGC;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,YAAA;EACA,0BAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;CChGH","file":"Photoshop.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-colors__photoshop\r\n  background #DCDCDC\r\n  border-radius 4px\r\n  box-shadow 0 0 0 1px rgba(0,0,0,.25), 0 8px 16px rgba(0,0,0,.15)\r\n  box-sizing initial\r\n  width 513px\r\n  font-family Roboto\r\n.vue-colors__photoshop__head\r\n  background-image linear-gradient(-180deg, #F0F0F0 0%, #D4D4D4 100%)\r\n  border-bottom 1px solid #B1B1B1\r\n  box-shadow inset 0 1px 0 0 rgba(255,255,255,.2), inset 0 -1px 0 0 rgba(0,0,0,.02)\r\n  height 23px\r\n  line-height 24px\r\n  border-radius 4px 4px 0 0\r\n  font-size 13px\r\n  color #4D4D4D\r\n  text-align center\r\n.vue-colors__photoshop__body\r\n  padding 15px\r\n  display flex\r\n.vue-colors__photoshop__saturation-wrap\r\n  width 256px\r\n  height 256px\r\n  position relative\r\n  border 2px solid #B3B3B3\r\n  border-bottom 2px solid #F0F0F0\r\n  overflow hidden\r\n  .vue-color__saturation--circle\r\n    width 12px\r\n    height 12px\r\n.vue-colors__photoshop__hue-wrap\r\n  position relative\r\n  height 256px\r\n  width 19px\r\n  margin-left 10px\r\n  border 2px solid #B3B3B3\r\n  border-bottom 2px solid #F0F0F0\r\n.vue-colors__photoshop__hue-pointer\r\n  position relative\r\n.vue-colors__photoshop__hue-pointer--left\r\n.vue-colors__photoshop__hue-pointer--right\r\n  position absolute\r\n  width 0\r\n  height 0\r\n  border-style solid\r\n  border-width 5px 0 5px 8px\r\n  border-color transparent transparent transparent #555\r\n  &:after\r\n    content \"\"\r\n    width 0\r\n    height 0\r\n    border-style solid\r\n    border-width 4px 0 4px 6px\r\n    border-color transparent transparent transparent #fff\r\n    position absolute\r\n    top 1px\r\n    left 1px\r\n    transform translate(-8px, -5px)\r\n.vue-colors__photoshop__hue-pointer--left\r\n  transform translate(-13px, -4px)\r\n.vue-colors__photoshop__hue-pointer--right\r\n  transform translate(20px, -4px) rotate(180deg)\r\n.vue-colors__photoshop__controls\r\n  width 180px\r\n  margin-left 10px\r\n  display flex\r\n.vue-colors__photoshop__actions\r\n  margin-left 20px\r\n  flex 1\r\n.vue-colors__photoshop__ac-btn\r\n  cursor pointer\r\n  background-image linear-gradient(-180deg, #FFFFFF 0%, #E6E6E6 100%)\r\n  border 1px solid #878787\r\n  border-radius 2px\r\n  height 20px\r\n  box-shadow 0 1px 0 0 #EAEAEA\r\n  font-size 14px\r\n  color #000\r\n  line-height 20px\r\n  text-align center\r\n  margin-bottom 10px\r\n.vue-colors__photoshop__previews\r\n  width 60px\r\n.vue-colors__photoshop__previews__swatches\r\n  border 1px solid #B3B3B3\r\n  border-bottom 1px solid #F0F0F0\r\n  margin-bottom 2px\r\n  margin-top 1px\r\n.vue-colors__photoshop__previews__pr-color\r\n  height 34px\r\n  box-shadow inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000\r\n.vue-colors__photoshop__previews__label\r\n  font-size 14px\r\n  color #000\r\n  text-align center\r\n.vue-colors__photoshop__fields\r\n  padding-top 5px\r\n  padding-bottom 9px\r\n  width 80px\r\n  position relative\r\n  .vue-color__editable-input__input\r\n    margin-left 40%\r\n    width 40%\r\n    height 18px\r\n    border 1px solid #888888\r\n    box-shadow inset 0 1px 1px rgba(0,0,0,.1), 0 1px 0 0 #ECECEC\r\n    margin-bottom 5px\r\n    font-size 13px\r\n    padding-left 3px\r\n    margin-right 10px\r\n  .vue-color__editable-input__label\r\n    top 0\r\n    left 0\r\n    width 34px\r\n    text-transform uppercase\r\n    font-size 13px\r\n    height 18px\r\n    line-height 22px\r\n    position absolute\r\n.vue-colors__photoshop__fields__divider\r\n  height 5px\r\n.vue-colors__photoshop__fields__hex\r\n  .vue-color__editable-input__input\r\n    margin-left 20%\r\n    width 80%\r\n    height 18px\r\n    border 1px solid #888888\r\n    box-shadow inset 0 1px 1px rgba(0,0,0,.1), 0 1px 0 0 #ECECEC\r\n    margin-bottom 6px\r\n    font-size 13px\r\n    padding-left 3px\r\n  .vue-color__editable-input__label\r\n    position absolute\r\n    top 0\r\n    left 0\r\n    width 14px\r\n    text-transform uppercase\r\n    font-size 13px\r\n    height 18px\r\n    line-height 22px\r\n",".vue-colors__photoshop {\n  background: #dcdcdc;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.25), 0 8px 16px rgba(0,0,0,0.15);\n  box-sizing: initial;\n  width: 513px;\n  font-family: Roboto;\n}\n.vue-colors__photoshop__head {\n  background-image: linear-gradient(-180deg, #f0f0f0 0%, #d4d4d4 100%);\n  border-bottom: 1px solid #b1b1b1;\n  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), inset 0 -1px 0 0 rgba(0,0,0,0.02);\n  height: 23px;\n  line-height: 24px;\n  border-radius: 4px 4px 0 0;\n  font-size: 13px;\n  color: #4d4d4d;\n  text-align: center;\n}\n.vue-colors__photoshop__body {\n  padding: 15px;\n  display: flex;\n}\n.vue-colors__photoshop__saturation-wrap {\n  width: 256px;\n  height: 256px;\n  position: relative;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n  overflow: hidden;\n}\n.vue-colors__photoshop__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-colors__photoshop__hue-wrap {\n  position: relative;\n  height: 256px;\n  width: 19px;\n  margin-left: 10px;\n  border: 2px solid #b3b3b3;\n  border-bottom: 2px solid #f0f0f0;\n}\n.vue-colors__photoshop__hue-pointer {\n  position: relative;\n}\n.vue-colors__photoshop__hue-pointer--left,\n.vue-colors__photoshop__hue-pointer--right {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 5px 0 5px 8px;\n  border-color: transparent transparent transparent #555;\n}\n.vue-colors__photoshop__hue-pointer--left:after,\n.vue-colors__photoshop__hue-pointer--right:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n  border-width: 4px 0 4px 6px;\n  border-color: transparent transparent transparent #fff;\n  position: absolute;\n  top: 1px;\n  left: 1px;\n  transform: translate(-8px, -5px);\n}\n.vue-colors__photoshop__hue-pointer--left {\n  transform: translate(-13px, -4px);\n}\n.vue-colors__photoshop__hue-pointer--right {\n  transform: translate(20px, -4px) rotate(180deg);\n}\n.vue-colors__photoshop__controls {\n  width: 180px;\n  margin-left: 10px;\n  display: flex;\n}\n.vue-colors__photoshop__actions {\n  margin-left: 20px;\n  flex: 1;\n}\n.vue-colors__photoshop__ac-btn {\n  cursor: pointer;\n  background-image: linear-gradient(-180deg, #fff 0%, #e6e6e6 100%);\n  border: 1px solid #878787;\n  border-radius: 2px;\n  height: 20px;\n  box-shadow: 0 1px 0 0 #eaeaea;\n  font-size: 14px;\n  color: #000;\n  line-height: 20px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n.vue-colors__photoshop__previews {\n  width: 60px;\n}\n.vue-colors__photoshop__previews__swatches {\n  border: 1px solid #b3b3b3;\n  border-bottom: 1px solid #f0f0f0;\n  margin-bottom: 2px;\n  margin-top: 1px;\n}\n.vue-colors__photoshop__previews__pr-color {\n  height: 34px;\n  box-shadow: inset 1px 0 0 #000, inset -1px 0 0 #000, inset 0 1px 0 #000;\n}\n.vue-colors__photoshop__previews__label {\n  font-size: 14px;\n  color: #000;\n  text-align: center;\n}\n.vue-colors__photoshop__fields {\n  padding-top: 5px;\n  padding-bottom: 9px;\n  width: 80px;\n  position: relative;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__input {\n  margin-left: 40%;\n  width: 40%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 5px;\n  font-size: 13px;\n  padding-left: 3px;\n  margin-right: 10px;\n}\n.vue-colors__photoshop__fields .vue-color__editable-input__label {\n  top: 0;\n  left: 0;\n  width: 34px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n  position: absolute;\n}\n.vue-colors__photoshop__fields__divider {\n  height: 5px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__input {\n  margin-left: 20%;\n  width: 80%;\n  height: 18px;\n  border: 1px solid #888;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1), 0 1px 0 0 #ececec;\n  margin-bottom: 6px;\n  font-size: 13px;\n  padding-left: 3px;\n}\n.vue-colors__photoshop__fields__hex .vue-color__editable-input__label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 14px;\n  text-transform: uppercase;\n  font-size: 13px;\n  height: 18px;\n  line-height: 22px;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2638,7 +2691,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Hue2 = _interopRequireDefault(_Hue);
 	
-	var _Alpha = __webpack_require__(47);
+	var _Alpha = __webpack_require__(46);
 	
 	var _Alpha2 = _interopRequireDefault(_Alpha);
 	
@@ -2706,23 +2759,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
 	__webpack_require__(41)
 	__vue_script__ = __webpack_require__(43)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/common/Saturation.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(46)
+	  console.warn("[vue-loader] src\\components\\common\\Saturation.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(45)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2a1986bc/Saturation.vue"
+	  var id = "_v-2ab9cb9b/Saturation.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -2765,7 +2825,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__saturation,\n.vue-color__saturation--white,\n.vue-color__saturation--black {\n  cursor: pointer;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.vue-color__saturation--white {\n  background: -webkit-linear-gradient(left, #fff, rgba(255,255,255,0));\n  background: linear-gradient(to right, #fff, rgba(255,255,255,0));\n}\n.vue-color__saturation--black {\n  background: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));\n  background: linear-gradient(to top, #000, rgba(0,0,0,0));\n}\n.vue-color__saturation--pointer {\n  cursor: pointer;\n  position: absolute;\n}\n.vue-color__saturation--circle {\n  cursor: head;\n  width: 4px;\n  height: 4px;\n  box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,0.3), 0 0 1px 2px rgba(0,0,0,0.4);\n  border-radius: 50%;\n  -webkit-transform: translate(-2px, -2px);\n          transform: translate(-2px, -2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Saturation.vue","/./src/components/common/Saturation.vue"],"names":[],"mappings":"AAmFA;;;EAGE,gBAAA;EACA,mBAAA;EACA,OAAA;EACA,QAAA;EACA,SAAA;EACA,UAAA;CClFD;ADoFD;EACE,qEAAA;EAAA,iEAAA;CClFD;ADmFD;EACE,iEAAA;EAAA,yDAAA;CCjFD;ADkFD;EACE,gBAAA;EACA,mBAAA;CChFD;ADiFD;EACE,aAAA;EACA,WAAA;EACA,YAAA;EACA,6FAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;CC/ED","file":"Saturation.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__saturation\n.vue-color__saturation--white\n.vue-color__saturation--black\n  cursor pointer\n  position absolute\n  top 0\n  left 0\n  right 0\n  bottom 0\n  \n.vue-color__saturation--white\n  background linear-gradient(to right, #fff, rgba(255,255,255,0))\n.vue-color__saturation--black\n  background linear-gradient(to top, #000, rgba(0,0,0,0))\n.vue-color__saturation--pointer\n  cursor pointer\n  position absolute\n.vue-color__saturation--circle\n  cursor head\n  width 4px\n  height 4px\n  box-shadow 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,.3), 0 0 1px 2px rgba(0,0,0,.4)\n  border-radius 50%\n  transform translate(-2px, -2px)\n",".vue-color__saturation,\n.vue-color__saturation--white,\n.vue-color__saturation--black {\n  cursor: pointer;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.vue-color__saturation--white {\n  background: linear-gradient(to right, #fff, rgba(255,255,255,0));\n}\n.vue-color__saturation--black {\n  background: linear-gradient(to top, #000, rgba(0,0,0,0));\n}\n.vue-color__saturation--pointer {\n  cursor: pointer;\n  position: absolute;\n}\n.vue-color__saturation--circle {\n  cursor: head;\n  width: 4px;\n  height: 4px;\n  box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,0.3), 0 0 1px 2px rgba(0,0,0,0.4);\n  border-radius: 50%;\n  transform: translate(-2px, -2px);\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__saturation,\n.vue-color__saturation--white,\n.vue-color__saturation--black {\n  cursor: pointer;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.vue-color__saturation--white {\n  background: -webkit-linear-gradient(left, #fff, rgba(255,255,255,0));\n  background: linear-gradient(to right, #fff, rgba(255,255,255,0));\n}\n.vue-color__saturation--black {\n  background: -webkit-linear-gradient(bottom, #000, rgba(0,0,0,0));\n  background: linear-gradient(to top, #000, rgba(0,0,0,0));\n}\n.vue-color__saturation--pointer {\n  cursor: pointer;\n  position: absolute;\n}\n.vue-color__saturation--circle {\n  cursor: head;\n  width: 4px;\n  height: 4px;\n  box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,0.3), 0 0 1px 2px rgba(0,0,0,0.4);\n  border-radius: 50%;\n  -webkit-transform: translate(-2px, -2px);\n          transform: translate(-2px, -2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Saturation.vue","/./src/components/common/Saturation.vue"],"names":[],"mappings":"AAmFA;;;EAGE,gBAAA;EACA,mBAAA;EACA,OAAA;EACA,QAAA;EACA,SAAA;EACA,UAAA;CClFD;ADoFD;EACE,qEAAA;EAAA,iEAAA;CClFD;ADmFD;EACE,iEAAA;EAAA,yDAAA;CCjFD;ADkFD;EACE,gBAAA;EACA,mBAAA;CChFD;ADiFD;EACE,aAAA;EACA,WAAA;EACA,YAAA;EACA,6FAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;CC/ED","file":"Saturation.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__saturation\r\n.vue-color__saturation--white\r\n.vue-color__saturation--black\r\n  cursor pointer\r\n  position absolute\r\n  top 0\r\n  left 0\r\n  right 0\r\n  bottom 0\r\n  \r\n.vue-color__saturation--white\r\n  background linear-gradient(to right, #fff, rgba(255,255,255,0))\r\n.vue-color__saturation--black\r\n  background linear-gradient(to top, #000, rgba(0,0,0,0))\r\n.vue-color__saturation--pointer\r\n  cursor pointer\r\n  position absolute\r\n.vue-color__saturation--circle\r\n  cursor head\r\n  width 4px\r\n  height 4px\r\n  box-shadow 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,.3), 0 0 1px 2px rgba(0,0,0,.4)\r\n  border-radius 50%\r\n  transform translate(-2px, -2px)\r\n",".vue-color__saturation,\n.vue-color__saturation--white,\n.vue-color__saturation--black {\n  cursor: pointer;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.vue-color__saturation--white {\n  background: linear-gradient(to right, #fff, rgba(255,255,255,0));\n}\n.vue-color__saturation--black {\n  background: linear-gradient(to top, #000, rgba(0,0,0,0));\n}\n.vue-color__saturation--pointer {\n  cursor: pointer;\n  position: absolute;\n}\n.vue-color__saturation--circle {\n  cursor: head;\n  width: 4px;\n  height: 4px;\n  box-shadow: 0 0 0 1.5px #fff, inset 0 0 1px 1px rgba(0,0,0,0.3), 0 0 1px 2px rgba(0,0,0,0.4);\n  border-radius: 50%;\n  transform: translate(-2px, -2px);\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -2853,116 +2913,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 44 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * lodash 4.0.1 (Custom Build) <https://lodash.com/>
-	 * Build: `lodash modularize exports="npm" -o ./`
-	 * Copyright 2012-2016 The Dojo Foundation <http://dojofoundation.org/>
-	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
-	 * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	 * Available under MIT license <https://lodash.com/license>
-	 */
-	var debounce = __webpack_require__(45);
-	
-	/** Used as the `TypeError` message for "Functions" methods. */
-	var FUNC_ERROR_TEXT = 'Expected a function';
-	
-	/**
-	 * Creates a throttled function that only invokes `func` at most once per
-	 * every `wait` milliseconds. The throttled function comes with a `cancel`
-	 * method to cancel delayed `func` invocations and a `flush` method to
-	 * immediately invoke them. Provide an options object to indicate whether
-	 * `func` should be invoked on the leading and/or trailing edge of the `wait`
-	 * timeout. The `func` is invoked with the last arguments provided to the
-	 * throttled function. Subsequent calls to the throttled function return the
-	 * result of the last `func` invocation.
-	 *
-	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
-	 * on the trailing edge of the timeout only if the throttled function is
-	 * invoked more than once during the `wait` timeout.
-	 *
-	 * See [David Corbacho's article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
-	 * for details over the differences between `_.throttle` and `_.debounce`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Function
-	 * @param {Function} func The function to throttle.
-	 * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
-	 * @param {Object} [options] The options object.
-	 * @param {boolean} [options.leading=true] Specify invoking on the leading
-	 *  edge of the timeout.
-	 * @param {boolean} [options.trailing=true] Specify invoking on the trailing
-	 *  edge of the timeout.
-	 * @returns {Function} Returns the new throttled function.
-	 * @example
-	 *
-	 * // Avoid excessively updating the position while scrolling.
-	 * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
-	 *
-	 * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
-	 * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
-	 * jQuery(element).on('click', throttled);
-	 *
-	 * // Cancel the trailing throttled invocation.
-	 * jQuery(window).on('popstate', throttled.cancel);
-	 */
-	function throttle(func, wait, options) {
-	  var leading = true,
-	      trailing = true;
-	
-	  if (typeof func != 'function') {
-	    throw new TypeError(FUNC_ERROR_TEXT);
-	  }
-	  if (isObject(options)) {
-	    leading = 'leading' in options ? !!options.leading : leading;
-	    trailing = 'trailing' in options ? !!options.trailing : trailing;
-	  }
-	  return debounce(func, wait, {
-	    'leading': leading,
-	    'maxWait': wait,
-	    'trailing': trailing
-	  });
-	}
-	
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(_.noop);
-	 * // => true
-	 *
-	 * _.isObject(null);
-	 * // => false
-	 */
-	function isObject(value) {
-	  var type = typeof value;
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	module.exports = throttle;
-
-
-/***/ },
-/* 45 */
 /***/ function(module, exports) {
 
-	/**
-	 * lodash 4.0.6 (Custom Build) <https://lodash.com/>
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * lodash (Custom Build) <https://lodash.com/>
 	 * Build: `lodash modularize exports="npm" -o ./`
 	 * Copyright jQuery Foundation and other contributors <https://jquery.org/>
 	 * Released under MIT license <https://lodash.com/license>
@@ -2977,9 +2931,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var NAN = 0 / 0;
 	
 	/** `Object#toString` result references. */
-	var funcTag = '[object Function]',
-	    genTag = '[object GeneratorFunction]',
-	    symbolTag = '[object Symbol]';
+	var symbolTag = '[object Symbol]';
 	
 	/** Used to match leading and trailing whitespace. */
 	var reTrim = /^\s+|\s+$/g;
@@ -2996,12 +2948,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	/** Built-in method references without a dependency on `root`. */
 	var freeParseInt = parseInt;
 	
+	/** Detect free variable `global` from Node.js. */
+	var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+	
+	/** Detect free variable `self`. */
+	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+	
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || Function('return this')();
+	
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
 	
 	/**
 	 * Used to resolve the
-	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
 	 * of values.
 	 */
 	var objectToString = objectProto.toString;
@@ -3017,7 +2978,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @static
 	 * @memberOf _
 	 * @since 2.4.0
-	 * @type {Function}
 	 * @category Date
 	 * @returns {number} Returns the timestamp.
 	 * @example
@@ -3025,23 +2985,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * _.defer(function(stamp) {
 	 *   console.log(_.now() - stamp);
 	 * }, _.now());
-	 * // => Logs the number of milliseconds it took for the deferred function to be invoked.
+	 * // => Logs the number of milliseconds it took for the deferred invocation.
 	 */
-	var now = Date.now;
+	var now = function() {
+	  return root.Date.now();
+	};
 	
 	/**
 	 * Creates a debounced function that delays invoking `func` until after `wait`
 	 * milliseconds have elapsed since the last time the debounced function was
 	 * invoked. The debounced function comes with a `cancel` method to cancel
 	 * delayed `func` invocations and a `flush` method to immediately invoke them.
-	 * Provide an options object to indicate whether `func` should be invoked on
-	 * the leading and/or trailing edge of the `wait` timeout. The `func` is invoked
-	 * with the last arguments provided to the debounced function. Subsequent calls
-	 * to the debounced function return the result of the last `func` invocation.
+	 * Provide `options` to indicate whether `func` should be invoked on the
+	 * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+	 * with the last arguments provided to the debounced function. Subsequent
+	 * calls to the debounced function return the result of the last `func`
+	 * invocation.
 	 *
-	 * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked
-	 * on the trailing edge of the timeout only if the debounced function is
-	 * invoked more than once during the `wait` timeout.
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	 * invoked on the trailing edge of the timeout only if the debounced function
+	 * is invoked more than once during the `wait` timeout.
+	 *
+	 * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	 * until to the next tick, similar to `setTimeout` with a timeout of `0`.
 	 *
 	 * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
 	 * for details over the differences between `_.debounce` and `_.throttle`.
@@ -3085,7 +3051,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      maxWait,
 	      result,
 	      timerId,
-	      lastCallTime = 0,
+	      lastCallTime,
 	      lastInvokeTime = 0,
 	      leading = false,
 	      maxing = false,
@@ -3136,7 +3102,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // Either this is the first call, activity has stopped and we're at the
 	    // trailing edge, the system time has gone backwards and we're treating
 	    // it as the trailing edge, or we've hit the `maxWait` limit.
-	    return (!lastCallTime || (timeSinceLastCall >= wait) ||
+	    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
 	      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
 	  }
 	
@@ -3150,7 +3116,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  function trailingEdge(time) {
-	    clearTimeout(timerId);
 	    timerId = undefined;
 	
 	    // Only invoke if we have `lastArgs` which means `func` has been
@@ -3166,8 +3131,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (timerId !== undefined) {
 	      clearTimeout(timerId);
 	    }
-	    lastCallTime = lastInvokeTime = 0;
-	    lastArgs = lastThis = timerId = undefined;
+	    lastInvokeTime = 0;
+	    lastArgs = lastCallTime = lastThis = timerId = undefined;
 	  }
 	
 	  function flush() {
@@ -3188,7 +3153,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      if (maxing) {
 	        // Handle invocations in a tight loop.
-	        clearTimeout(timerId);
 	        timerId = setTimeout(timerExpired, wait);
 	        return invokeFunc(lastCallTime);
 	      }
@@ -3204,34 +3168,70 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	
 	/**
-	 * Checks if `value` is classified as a `Function` object.
+	 * Creates a throttled function that only invokes `func` at most once per
+	 * every `wait` milliseconds. The throttled function comes with a `cancel`
+	 * method to cancel delayed `func` invocations and a `flush` method to
+	 * immediately invoke them. Provide `options` to indicate whether `func`
+	 * should be invoked on the leading and/or trailing edge of the `wait`
+	 * timeout. The `func` is invoked with the last arguments provided to the
+	 * throttled function. Subsequent calls to the throttled function return the
+	 * result of the last `func` invocation.
+	 *
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	 * invoked on the trailing edge of the timeout only if the throttled function
+	 * is invoked more than once during the `wait` timeout.
+	 *
+	 * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	 * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+	 *
+	 * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+	 * for details over the differences between `_.throttle` and `_.debounce`.
 	 *
 	 * @static
 	 * @memberOf _
 	 * @since 0.1.0
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
+	 * @category Function
+	 * @param {Function} func The function to throttle.
+	 * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+	 * @param {Object} [options={}] The options object.
+	 * @param {boolean} [options.leading=true]
+	 *  Specify invoking on the leading edge of the timeout.
+	 * @param {boolean} [options.trailing=true]
+	 *  Specify invoking on the trailing edge of the timeout.
+	 * @returns {Function} Returns the new throttled function.
 	 * @example
 	 *
-	 * _.isFunction(_);
-	 * // => true
+	 * // Avoid excessively updating the position while scrolling.
+	 * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
 	 *
-	 * _.isFunction(/abc/);
-	 * // => false
+	 * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+	 * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
+	 * jQuery(element).on('click', throttled);
+	 *
+	 * // Cancel the trailing throttled invocation.
+	 * jQuery(window).on('popstate', throttled.cancel);
 	 */
-	function isFunction(value) {
-	  // The use of `Object#toString` avoids issues with the `typeof` operator
-	  // in Safari 8 which returns 'object' for typed array and weak map constructors,
-	  // and PhantomJS 1.9 which returns 'function' for `NodeList` instances.
-	  var tag = isObject(value) ? objectToString.call(value) : '';
-	  return tag == funcTag || tag == genTag;
+	function throttle(func, wait, options) {
+	  var leading = true,
+	      trailing = true;
+	
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  if (isObject(options)) {
+	    leading = 'leading' in options ? !!options.leading : leading;
+	    trailing = 'trailing' in options ? !!options.trailing : trailing;
+	  }
+	  return debounce(func, wait, {
+	    'leading': leading,
+	    'maxWait': wait,
+	    'trailing': trailing
+	  });
 	}
 	
 	/**
 	 * Checks if `value` is the
-	 * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)
+	 * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
 	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
 	 *
 	 * @static
@@ -3295,8 +3295,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @since 4.0.0
 	 * @category Lang
 	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified,
-	 *  else `false`.
+	 * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
 	 * @example
 	 *
 	 * _.isSymbol(Symbol.iterator);
@@ -3321,8 +3320,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @returns {number} Returns the number.
 	 * @example
 	 *
-	 * _.toNumber(3);
-	 * // => 3
+	 * _.toNumber(3.2);
+	 * // => 3.2
 	 *
 	 * _.toNumber(Number.MIN_VALUE);
 	 * // => 5e-324
@@ -3330,8 +3329,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * _.toNumber(Infinity);
 	 * // => Infinity
 	 *
-	 * _.toNumber('3');
-	 * // => 3
+	 * _.toNumber('3.2');
+	 * // => 3.2
 	 */
 	function toNumber(value) {
 	  if (typeof value == 'number') {
@@ -3341,7 +3340,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return NAN;
 	  }
 	  if (isObject(value)) {
-	    var other = isFunction(value.valueOf) ? value.valueOf() : value;
+	    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
 	    value = isObject(other) ? (other + '') : other;
 	  }
 	  if (typeof value != 'string') {
@@ -3354,37 +3353,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	    : (reIsBadHex.test(value) ? NAN : +value);
 	}
 	
-	module.exports = debounce;
-
+	module.exports = throttle;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-color__saturation\" \n  :style=\"{background: bgColor}\"\n  v-el:container\n  @mousedown=\"handleMouseDown\">\n  <div class=\"vue-color__saturation--white\"></div>\n  <div class=\"vue-color__saturation--black\"></div>\n  <div class=\"vue-color__saturation--pointer\" :style=\"{top: pointerTop, left: pointerLeft}\">\n    <slot><div class=\"vue-color__saturation--circle\"></div></slot>\n  </div>\n</div>\n";
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(48)
-	__vue_script__ = __webpack_require__(50)
+	var __vue_styles__ = {}
+	__webpack_require__(47)
+	__vue_script__ = __webpack_require__(49)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/common/Alpha.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(56)
+	  console.warn("[vue-loader] src\\components\\common\\Alpha.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(55)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2ca9ca84/Alpha.vue"
+	  var id = "_v-60e35425/Alpha.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -3393,13 +3400,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	})()}
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(49);
+	var content = __webpack_require__(48);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3419,7 +3426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 49 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3427,13 +3434,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__c-alpha {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__checkboard-wrap {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  overflow: hidden;\n}\n.vue-color__c-alpha__gradient {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__container {\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n  height: 100%;\n  margin: 0 3px;\n}\n.vue-color__c-alpha__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-alpha__picker {\n  cursor: pointer;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  margin-top: 1px;\n  -webkit-transform: translateX(-2px);\n          transform: translateX(-2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Alpha.vue","/./src/components/common/Alpha.vue"],"names":[],"mappings":"AAgFA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CC/ED;ADgFD;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,iBAAA;CC9ED;AD+ED;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CC7ED;AD8ED;EACE,gBAAA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,cAAA;CC5ED;AD6ED;EACE,WAAA;EACA,mBAAA;CC3ED;AD4ED;EACE,gBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;EACA,oCAAA;EACA,iBAAA;EACA,gBAAA;EACA,oCAAA;UAAA,4BAAA;CC1ED","file":"Alpha.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__c-alpha\n  position absolute\n  top 0px\n  right 0px\n  bottom 0px\n  left 0px\n.vue-color__c-alpha__checkboard-wrap\n  position absolute\n  top 0px\n  right 0px\n  bottom 0px\n  left 0px\n  overflow hidden\n.vue-color__c-alpha__gradient\n  position absolute\n  top 0px\n  right 0px\n  bottom 0px\n  left 0px\n.vue-color__c-alpha__container\n  cursor pointer\n  position relative\n  z-index 2\n  height 100%\n  margin 0 3px\n.vue-color__c-alpha__pointer\n  z-index 2\n  position absolute\n.vue-color__c-alpha__picker\n  cursor pointer\n  width 4px\n  border-radius 1px\n  height 8px\n  box-shadow 0 0 2px rgba(0, 0, 0, .6)\n  background #fff\n  margin-top 1px\n  transform translateX(-2px)\n",".vue-color__c-alpha {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__checkboard-wrap {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  overflow: hidden;\n}\n.vue-color__c-alpha__gradient {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__container {\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n  height: 100%;\n  margin: 0 3px;\n}\n.vue-color__c-alpha__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-alpha__picker {\n  cursor: pointer;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  margin-top: 1px;\n  transform: translateX(-2px);\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__c-alpha {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__checkboard-wrap {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  overflow: hidden;\n}\n.vue-color__c-alpha__gradient {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__container {\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n  height: 100%;\n  margin: 0 3px;\n}\n.vue-color__c-alpha__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-alpha__picker {\n  cursor: pointer;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  margin-top: 1px;\n  -webkit-transform: translateX(-2px);\n          transform: translateX(-2px);\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Alpha.vue","/./src/components/common/Alpha.vue"],"names":[],"mappings":"AAgFA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CC/ED;ADgFD;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;EACA,iBAAA;CC9ED;AD+ED;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CC7ED;AD8ED;EACE,gBAAA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,cAAA;CC5ED;AD6ED;EACE,WAAA;EACA,mBAAA;CC3ED;AD4ED;EACE,gBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;EACA,oCAAA;EACA,iBAAA;EACA,gBAAA;EACA,oCAAA;UAAA,4BAAA;CC1ED","file":"Alpha.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__c-alpha\r\n  position absolute\r\n  top 0px\r\n  right 0px\r\n  bottom 0px\r\n  left 0px\r\n.vue-color__c-alpha__checkboard-wrap\r\n  position absolute\r\n  top 0px\r\n  right 0px\r\n  bottom 0px\r\n  left 0px\r\n  overflow hidden\r\n.vue-color__c-alpha__gradient\r\n  position absolute\r\n  top 0px\r\n  right 0px\r\n  bottom 0px\r\n  left 0px\r\n.vue-color__c-alpha__container\r\n  cursor pointer\r\n  position relative\r\n  z-index 2\r\n  height 100%\r\n  margin 0 3px\r\n.vue-color__c-alpha__pointer\r\n  z-index 2\r\n  position absolute\r\n.vue-color__c-alpha__picker\r\n  cursor pointer\r\n  width 4px\r\n  border-radius 1px\r\n  height 8px\r\n  box-shadow 0 0 2px rgba(0, 0, 0, .6)\r\n  background #fff\r\n  margin-top 1px\r\n  transform translateX(-2px)\r\n",".vue-color__c-alpha {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__checkboard-wrap {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  overflow: hidden;\n}\n.vue-color__c-alpha__gradient {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n.vue-color__c-alpha__container {\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n  height: 100%;\n  margin: 0 3px;\n}\n.vue-color__c-alpha__pointer {\n  z-index: 2;\n  position: absolute;\n}\n.vue-color__c-alpha__picker {\n  cursor: pointer;\n  width: 4px;\n  border-radius: 1px;\n  height: 8px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.6);\n  background: #fff;\n  margin-top: 1px;\n  transform: translateX(-2px);\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 50 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3442,7 +3449,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _Checkboard = __webpack_require__(51);
+	var _Checkboard = __webpack_require__(50);
 	
 	var _Checkboard2 = _interopRequireDefault(_Checkboard);
 	
@@ -3506,27 +3513,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 51 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(52)
-	__vue_script__ = __webpack_require__(54)
+	var __vue_styles__ = {}
+	__webpack_require__(51)
+	__vue_script__ = __webpack_require__(53)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/common/Checkboard.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(55)
+	  console.warn("[vue-loader] src\\components\\common\\Checkboard.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(54)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-b92a6ca4/Checkboard.vue"
+	  var id = "_v-399d4eb2/Checkboard.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -3535,13 +3549,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	})()}
 
 /***/ },
-/* 52 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(53);
+	var content = __webpack_require__(52);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3561,7 +3575,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 53 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3569,13 +3583,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__c-checkerboard {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Checkboard.vue","/./src/components/common/Checkboard.vue"],"names":[],"mappings":"AAkFA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CCjFD","file":"Checkboard.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__c-checkerboard\n  position absolute\n  top 0px\n  right 0px\n  bottom 0px\n  left 0px\n",".vue-color__c-checkerboard {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__c-checkerboard {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n", "", {"version":3,"sources":["/./src/components/common/src/components/common/Checkboard.vue","/./src/components/common/Checkboard.vue"],"names":[],"mappings":"AAkFA;EACE,mBAAA;EACA,SAAA;EACA,WAAA;EACA,YAAA;EACA,UAAA;CCjFD","file":"Checkboard.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__c-checkerboard\r\n  position absolute\r\n  top 0px\r\n  right 0px\r\n  bottom 0px\r\n  left 0px\r\n",".vue-color__c-checkerboard {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 54 */
+/* 53 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3643,45 +3657,52 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 55 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-color__c-checkerboard\" :style=\"{background:  bgStyle}\"></div>\n";
 
 /***/ },
-/* 56 */
+/* 55 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-color__c-alpha\">\n  <div class=\"vue-color__c-alpha__checkboard-wrap\">\n    <checkboard></checkboard>\n  </div>\n  <div class=\"vue-color__c-alpha__gradient\" :style=\"{background: gradientColor}\"></div>\n  <div class=\"vue-color__c-alpha__container\" v-el:container\n      @mousedown=\"handleMouseDown\"\n      @touchmove=\"handleChange\"\n      @touchstart=\"handleChange\">\n    <div class=\"vue-color__c-alpha__pointer\" :style=\"{left: colors.a * 100 + '%'}\">\n      <slot><div class=\"vue-color__c-alpha__picker\"></div></slot>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 57 */
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-colors__photoshop\">\n  <div class=\"vue-colors__photoshop__head\">{{head}}</div>\n  <div class=\"vue-colors__photoshop__body\">\n    <div class=\"vue-colors__photoshop__saturation-wrap\">\n      <saturation :colors.sync=\"colors\" :on-change=\"childChange\"></saturation>\n    </div>\n    <div class=\"vue-colors__photoshop__hue-wrap\">\n      <hue :colors.sync=\"colors\" :on-change=\"childChange\" direction=\"vertical\">\n        <div class=\"vue-colors__photoshop__hue-pointer\">\n          <i class=\"vue-colors__photoshop__hue-pointer--left\"></i><i class=\"vue-colors__photoshop__hue-pointer--right\"></i>\n        </div>\n      </hue>\n    </div>\n    <div class=\"vue-colors__photoshop__controls\">\n      <div class=\"vue-colors__photoshop__previews\">\n        <div class=\"vue-colors__photoshop__previews__label\">new</div>\n        <div class=\"vue-colors__photoshop__previews__swatches\">\n          <div class=\"vue-colors__photoshop__previews__pr-color\" :style=\"{background: colors.hex}\"></div>\n          <div class=\"vue-colors__photoshop__previews__pr-color\" :style=\"{background: currentColor}\"></div>\n        </div>\n        <div class=\"vue-colors__photoshop__previews__label\">current</div>\n      </div>\n      <div class=\"vue-colors__photoshop__actions\">\n        <div class=\"vue-colors__photoshop__ac-btn\" @click=\"handleAccept\">OK</div>\n        <div class=\"vue-colors__photoshop__ac-btn\" @click=\"handleCancel\">Cancel</div>\n        <div class=\"vue-colors__photoshop__fields\">\n          <!-- hsla -->\n          <ed-in label=\"h\" :val.sync=\"colors.hsl.h\"\n            :on-change=\"inputChange\"></ed-in>\n          <ed-in label=\"s\" :val.sync=\"colors.hsl.s\"\n            :on-change=\"inputChange\"></ed-in>\n          <ed-in label=\"v\" :val.sync=\"colors.hsl.l\"\n            :on-change=\"inputChange\"></ed-in>\n          <div class=\"vue-colors__photoshop__fields__divider\"></div>\n          <!-- rgba -->\n          <ed-in label=\"r\" :val.sync=\"colors.rgba.r\"\n            :on-change=\"inputChange\"></ed-in>\n          <ed-in label=\"g\" :val.sync=\"colors.rgba.g\"\n            :on-change=\"inputChange\"></ed-in>\n          <ed-in label=\"b\" :val.sync=\"colors.rgba.b\"\n            :on-change=\"inputChange\"></ed-in>\n          <div class=\"vue-colors__photoshop__fields__divider\"></div>\n          <!-- hex -->\n          <ed-in label=\"#\" class=\"vue-colors__photoshop__fields__hex\"\n            :val.sync=\"colors.hex\"\n            :on-change=\"inputChange\"></ed-in>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 58 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(59)
-	__vue_script__ = __webpack_require__(61)
+	var __vue_styles__ = {}
+	__webpack_require__(58)
+	__vue_script__ = __webpack_require__(60)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Sketch.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(62)
+	  console.warn("[vue-loader] src\\components\\Sketch.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(61)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-1ee10e70/Sketch.vue"
+	  var id = "_v-0d69ac64/Sketch.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -3690,13 +3711,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	})()}
 
 /***/ },
-/* 59 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(60);
+	var content = __webpack_require__(59);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3716,7 +3737,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 60 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3724,13 +3745,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__sketch {\n  position: relative;\n  width: 200px;\n  padding: 10px 10px 0;\n  box-sizing: initial;\n  background: #fff;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15);\n}\n.vue-color__sketch__saturation-wrap {\n  width: 100%;\n  padding-bottom: 75%;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__sketch__controls {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__sketch__sliders {\n  padding: 4px 0;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__sketch__sliders .vue-color__c-hue,\n.vue-color__sketch__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__sketch__hue-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__sketch__alpha-wrap {\n  position: relative;\n  height: 10px;\n  margin-top: 4px;\n  overflow: hidden;\n}\n.vue-color__sketch__color-wrap {\n  width: 24px;\n  height: 24px;\n  position: relative;\n  margin-top: 4px;\n  margin-left: 4px;\n  border-radius: 3px;\n}\n.vue-color__sketch__active-color {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  border-radius: 2px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15), inset 0 0 4px rgba(0,0,0,0.25);\n  z-index: 2;\n}\n.vue-color__sketch__field {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-top: 4px;\n}\n.vue-color__sketch__field .vue-color__editable-input__input {\n  width: 80%;\n  padding: 4px 10% 3px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #ccc;\n  font-size: 11px;\n}\n.vue-color__sketch__field .vue-color__editable-input__label {\n  display: block;\n  text-align: center;\n  font-size: 11px;\n  color: #222;\n  padding-top: 3px;\n  padding-bottom: 4px;\n  text-transform: capitalize;\n}\n.vue-color__sketch__field--single {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  padding-left: 6px;\n}\n.vue-color__sketch__field--double {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.vue-color__sketch__presets {\n  margin-right: -10px;\n  margin-left: -10px;\n  padding-left: 10px;\n  padding-top: 10px;\n  border-top: 1px solid #eee;\n}\n.vue-color__sketch__presets-color {\n  border-radius: 3px;\n  overflow: hidden;\n  position: relative;\n  display: inline-block;\n  margin: 0 10px 10px 0;\n  vertical-align: top;\n  cursor: pointer;\n  width: 16px;\n  height: 16px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Sketch.vue","/./src/components/Sketch.vue"],"names":[],"mappings":"AAwHA;EACE,mBAAA;EACA,aAAA;EACA,qBAAA;EACA,oBAAA;EACA,iBAAA;EACA,mBAAA;EACA,oEAAA;CCvHD;ADwHD;EACE,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,iBAAA;CCtHD;ADuHD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;CCrHD;ADsHD;EACE,eAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CCpHD;ADqHC;;EAEE,mBAAA;CCnHH;ADoHD;EACE,mBAAA;EACA,aAAA;CClHD;ADmHD;EACE,mBAAA;EACA,aAAA;EACA,gBAAA;EACA,iBAAA;CCjHD;ADkHD;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;CChHD;ADiHD;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,SAAA;EACA,UAAA;EACA,mBAAA;EACA,6EAAA;EACA,WAAA;CC/GD;ADgHD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,iBAAA;CC9GD;AD+GC;EACE,WAAA;EACA,qBAAA;EACA,aAAA;EACA,iCAAA;EACA,gBAAA;CC7GH;AD8GC;EACE,eAAA;EACA,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,iBAAA;EACA,oBAAA;EACA,2BAAA;CC5GH;AD6GD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,kBAAA;CC3GD;AD4GD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CC1GD;AD2GD;EACE,oBAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,2BAAA;CCzGD;AD0GD;EACE,mBAAA;EACA,iBAAA;EACA,mBAAA;EACA,sBAAA;EACA,sBAAA;EACA,oBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;EACA,6CAAA;CCxGD","file":"Sketch.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__sketch\n  position relative\n  width 200px\n  padding 10px 10px 0\n  box-sizing initial\n  background #fff\n  border-radius 4px\n  box-shadow 0 0 0 1px rgba(0,0,0,.15), 0 8px 16px rgba(0,0,0,.15)\n.vue-color__sketch__saturation-wrap\n  width 100%\n  padding-bottom 75%\n  position relative\n  overflow hidden\n.vue-color__sketch__controls\n  display flex\n.vue-color__sketch__sliders\n  padding 4px 0\n  flex 1\n  .vue-color__c-hue\n  .vue-color__c-alpha__gradient\n    border-radius 2px\n.vue-color__sketch__hue-wrap\n  position relative\n  height 10px\n.vue-color__sketch__alpha-wrap\n  position relative\n  height 10px\n  margin-top 4px\n  overflow hidden\n.vue-color__sketch__color-wrap\n  width 24px\n  height 24px\n  position relative\n  margin-top 4px\n  margin-left 4px\n  border-radius 3px\n.vue-color__sketch__active-color\n  position absolute\n  top 0\n  left 0\n  right 0\n  bottom 0\n  border-radius 2px\n  box-shadow inset 0 0 0 1px rgba(0,0,0,.15), inset 0 0 4px rgba(0,0,0,.25)\n  z-index 2\n.vue-color__sketch__field\n  display flex\n  padding-top 4px\n  .vue-color__editable-input__input\n    width 80%\n    padding 4px 10% 3px\n    border none\n    box-shadow inset 0 0 0 1px #ccc\n    font-size 11px\n  .vue-color__editable-input__label\n    display block\n    text-align center\n    font-size 11px\n    color #222\n    padding-top 3px\n    padding-bottom 4px\n    text-transform capitalize\n.vue-color__sketch__field--single\n  flex 1\n  padding-left 6px\n.vue-color__sketch__field--double\n  flex 2\n.vue-color__sketch__presets\n  margin-right -10px\n  margin-left -10px\n  padding-left 10px\n  padding-top 10px\n  border-top 1px solid #eee\n.vue-color__sketch__presets-color\n  border-radius 3px\n  overflow hidden\n  position relative\n  display inline-block\n  margin 0 10px 10px 0\n  vertical-align top\n  cursor pointer\n  width 16px\n  height 16px\n  box-shadow inset 0 0 0 1px rgba(0,0,0,.15)\n",".vue-color__sketch {\n  position: relative;\n  width: 200px;\n  padding: 10px 10px 0;\n  box-sizing: initial;\n  background: #fff;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15);\n}\n.vue-color__sketch__saturation-wrap {\n  width: 100%;\n  padding-bottom: 75%;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__sketch__controls {\n  display: flex;\n}\n.vue-color__sketch__sliders {\n  padding: 4px 0;\n  flex: 1;\n}\n.vue-color__sketch__sliders .vue-color__c-hue,\n.vue-color__sketch__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__sketch__hue-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__sketch__alpha-wrap {\n  position: relative;\n  height: 10px;\n  margin-top: 4px;\n  overflow: hidden;\n}\n.vue-color__sketch__color-wrap {\n  width: 24px;\n  height: 24px;\n  position: relative;\n  margin-top: 4px;\n  margin-left: 4px;\n  border-radius: 3px;\n}\n.vue-color__sketch__active-color {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  border-radius: 2px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15), inset 0 0 4px rgba(0,0,0,0.25);\n  z-index: 2;\n}\n.vue-color__sketch__field {\n  display: flex;\n  padding-top: 4px;\n}\n.vue-color__sketch__field .vue-color__editable-input__input {\n  width: 80%;\n  padding: 4px 10% 3px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #ccc;\n  font-size: 11px;\n}\n.vue-color__sketch__field .vue-color__editable-input__label {\n  display: block;\n  text-align: center;\n  font-size: 11px;\n  color: #222;\n  padding-top: 3px;\n  padding-bottom: 4px;\n  text-transform: capitalize;\n}\n.vue-color__sketch__field--single {\n  flex: 1;\n  padding-left: 6px;\n}\n.vue-color__sketch__field--double {\n  flex: 2;\n}\n.vue-color__sketch__presets {\n  margin-right: -10px;\n  margin-left: -10px;\n  padding-left: 10px;\n  padding-top: 10px;\n  border-top: 1px solid #eee;\n}\n.vue-color__sketch__presets-color {\n  border-radius: 3px;\n  overflow: hidden;\n  position: relative;\n  display: inline-block;\n  margin: 0 10px 10px 0;\n  vertical-align: top;\n  cursor: pointer;\n  width: 16px;\n  height: 16px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__sketch {\n  position: relative;\n  width: 200px;\n  padding: 10px 10px 0;\n  box-sizing: initial;\n  background: #fff;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15);\n}\n.vue-color__sketch__saturation-wrap {\n  width: 100%;\n  padding-bottom: 75%;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__sketch__controls {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__sketch__sliders {\n  padding: 4px 0;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__sketch__sliders .vue-color__c-hue,\n.vue-color__sketch__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__sketch__hue-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__sketch__alpha-wrap {\n  position: relative;\n  height: 10px;\n  margin-top: 4px;\n  overflow: hidden;\n}\n.vue-color__sketch__color-wrap {\n  width: 24px;\n  height: 24px;\n  position: relative;\n  margin-top: 4px;\n  margin-left: 4px;\n  border-radius: 3px;\n}\n.vue-color__sketch__active-color {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  border-radius: 2px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15), inset 0 0 4px rgba(0,0,0,0.25);\n  z-index: 2;\n}\n.vue-color__sketch__field {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-top: 4px;\n}\n.vue-color__sketch__field .vue-color__editable-input__input {\n  width: 80%;\n  padding: 4px 10% 3px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #ccc;\n  font-size: 11px;\n}\n.vue-color__sketch__field .vue-color__editable-input__label {\n  display: block;\n  text-align: center;\n  font-size: 11px;\n  color: #222;\n  padding-top: 3px;\n  padding-bottom: 4px;\n  text-transform: capitalize;\n}\n.vue-color__sketch__field--single {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  padding-left: 6px;\n}\n.vue-color__sketch__field--double {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.vue-color__sketch__presets {\n  margin-right: -10px;\n  margin-left: -10px;\n  padding-left: 10px;\n  padding-top: 10px;\n  border-top: 1px solid #eee;\n}\n.vue-color__sketch__presets-color {\n  border-radius: 3px;\n  overflow: hidden;\n  position: relative;\n  display: inline-block;\n  margin: 0 10px 10px 0;\n  vertical-align: top;\n  cursor: pointer;\n  width: 16px;\n  height: 16px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Sketch.vue","/./src/components/Sketch.vue"],"names":[],"mappings":"AAwHA;EACE,mBAAA;EACA,aAAA;EACA,qBAAA;EACA,oBAAA;EACA,iBAAA;EACA,mBAAA;EACA,oEAAA;CCvHD;ADwHD;EACE,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,iBAAA;CCtHD;ADuHD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;CCrHD;ADsHD;EACE,eAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CCpHD;ADqHC;;EAEE,mBAAA;CCnHH;ADoHD;EACE,mBAAA;EACA,aAAA;CClHD;ADmHD;EACE,mBAAA;EACA,aAAA;EACA,gBAAA;EACA,iBAAA;CCjHD;ADkHD;EACE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;CChHD;ADiHD;EACE,mBAAA;EACA,OAAA;EACA,QAAA;EACA,SAAA;EACA,UAAA;EACA,mBAAA;EACA,6EAAA;EACA,WAAA;CC/GD;ADgHD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,iBAAA;CC9GD;AD+GC;EACE,WAAA;EACA,qBAAA;EACA,aAAA;EACA,iCAAA;EACA,gBAAA;CC7GH;AD8GC;EACE,eAAA;EACA,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,iBAAA;EACA,oBAAA;EACA,2BAAA;CC5GH;AD6GD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;EACA,kBAAA;CC3GD;AD4GD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CC1GD;AD2GD;EACE,oBAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,2BAAA;CCzGD;AD0GD;EACE,mBAAA;EACA,iBAAA;EACA,mBAAA;EACA,sBAAA;EACA,sBAAA;EACA,oBAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;EACA,6CAAA;CCxGD","file":"Sketch.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__sketch\r\n  position relative\r\n  width 200px\r\n  padding 10px 10px 0\r\n  box-sizing initial\r\n  background #fff\r\n  border-radius 4px\r\n  box-shadow 0 0 0 1px rgba(0,0,0,.15), 0 8px 16px rgba(0,0,0,.15)\r\n.vue-color__sketch__saturation-wrap\r\n  width 100%\r\n  padding-bottom 75%\r\n  position relative\r\n  overflow hidden\r\n.vue-color__sketch__controls\r\n  display flex\r\n.vue-color__sketch__sliders\r\n  padding 4px 0\r\n  flex 1\r\n  .vue-color__c-hue\r\n  .vue-color__c-alpha__gradient\r\n    border-radius 2px\r\n.vue-color__sketch__hue-wrap\r\n  position relative\r\n  height 10px\r\n.vue-color__sketch__alpha-wrap\r\n  position relative\r\n  height 10px\r\n  margin-top 4px\r\n  overflow hidden\r\n.vue-color__sketch__color-wrap\r\n  width 24px\r\n  height 24px\r\n  position relative\r\n  margin-top 4px\r\n  margin-left 4px\r\n  border-radius 3px\r\n.vue-color__sketch__active-color\r\n  position absolute\r\n  top 0\r\n  left 0\r\n  right 0\r\n  bottom 0\r\n  border-radius 2px\r\n  box-shadow inset 0 0 0 1px rgba(0,0,0,.15), inset 0 0 4px rgba(0,0,0,.25)\r\n  z-index 2\r\n.vue-color__sketch__field\r\n  display flex\r\n  padding-top 4px\r\n  .vue-color__editable-input__input\r\n    width 80%\r\n    padding 4px 10% 3px\r\n    border none\r\n    box-shadow inset 0 0 0 1px #ccc\r\n    font-size 11px\r\n  .vue-color__editable-input__label\r\n    display block\r\n    text-align center\r\n    font-size 11px\r\n    color #222\r\n    padding-top 3px\r\n    padding-bottom 4px\r\n    text-transform capitalize\r\n.vue-color__sketch__field--single\r\n  flex 1\r\n  padding-left 6px\r\n.vue-color__sketch__field--double\r\n  flex 2\r\n.vue-color__sketch__presets\r\n  margin-right -10px\r\n  margin-left -10px\r\n  padding-left 10px\r\n  padding-top 10px\r\n  border-top 1px solid #eee\r\n.vue-color__sketch__presets-color\r\n  border-radius 3px\r\n  overflow hidden\r\n  position relative\r\n  display inline-block\r\n  margin 0 10px 10px 0\r\n  vertical-align top\r\n  cursor pointer\r\n  width 16px\r\n  height 16px\r\n  box-shadow inset 0 0 0 1px rgba(0,0,0,.15)\r\n",".vue-color__sketch {\n  position: relative;\n  width: 200px;\n  padding: 10px 10px 0;\n  box-sizing: initial;\n  background: #fff;\n  border-radius: 4px;\n  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15);\n}\n.vue-color__sketch__saturation-wrap {\n  width: 100%;\n  padding-bottom: 75%;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__sketch__controls {\n  display: flex;\n}\n.vue-color__sketch__sliders {\n  padding: 4px 0;\n  flex: 1;\n}\n.vue-color__sketch__sliders .vue-color__c-hue,\n.vue-color__sketch__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__sketch__hue-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__sketch__alpha-wrap {\n  position: relative;\n  height: 10px;\n  margin-top: 4px;\n  overflow: hidden;\n}\n.vue-color__sketch__color-wrap {\n  width: 24px;\n  height: 24px;\n  position: relative;\n  margin-top: 4px;\n  margin-left: 4px;\n  border-radius: 3px;\n}\n.vue-color__sketch__active-color {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  border-radius: 2px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15), inset 0 0 4px rgba(0,0,0,0.25);\n  z-index: 2;\n}\n.vue-color__sketch__field {\n  display: flex;\n  padding-top: 4px;\n}\n.vue-color__sketch__field .vue-color__editable-input__input {\n  width: 80%;\n  padding: 4px 10% 3px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #ccc;\n  font-size: 11px;\n}\n.vue-color__sketch__field .vue-color__editable-input__label {\n  display: block;\n  text-align: center;\n  font-size: 11px;\n  color: #222;\n  padding-top: 3px;\n  padding-bottom: 4px;\n  text-transform: capitalize;\n}\n.vue-color__sketch__field--single {\n  flex: 1;\n  padding-left: 6px;\n}\n.vue-color__sketch__field--double {\n  flex: 2;\n}\n.vue-color__sketch__presets {\n  margin-right: -10px;\n  margin-left: -10px;\n  padding-left: 10px;\n  padding-top: 10px;\n  border-top: 1px solid #eee;\n}\n.vue-color__sketch__presets-color {\n  border-radius: 3px;\n  overflow: hidden;\n  position: relative;\n  display: inline-block;\n  margin: 0 10px 10px 0;\n  vertical-align: top;\n  cursor: pointer;\n  width: 16px;\n  height: 16px;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 61 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3755,7 +3776,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Hue2 = _interopRequireDefault(_Hue);
 	
-	var _Alpha = __webpack_require__(47);
+	var _Alpha = __webpack_require__(46);
 	
 	var _Alpha2 = _interopRequireDefault(_Alpha);
 	
@@ -3817,33 +3838,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 62 */
+/* 61 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-color__sketch\">\n  <div class=\"vue-color__sketch__saturation-wrap\">\n    <saturation :colors.sync=\"colors\" :on-change=\"childChange\"></saturation>\n  </div>\n  <div class=\"vue-color__sketch__controls\">\n    <div class=\"vue-color__sketch__sliders\">\n      <div class=\"vue-color__sketch__hue-wrap\">\n        <hue :colors.sync=\"colors\" :on-change=\"childChange\"></hue>  \n      </div>\n      <div class=\"vue-color__sketch__alpha-wrap\">\n        <alpha :colors.sync=\"colors\" :on-change=\"childChange\"></alpha>\n      </div>\n    </div>\n    <div class=\"vue-color__sketch__color-wrap\">\n      <div class=\"vue-color__sketch__active-color\" :style=\"{background: activeColor}\"></div>\n    </div>\n  </div>\n  <div class=\"vue-color__sketch__field\">\n    <!-- rgba -->\n    <div class=\"vue-color__sketch__field--double\">\n      <ed-in label=\"hex\"\n      :val.sync=\"colors.hex\"\n      :on-change=\"inputChange\"></ed-in>  \n    </div>\n    <div class=\"vue-color__sketch__field--single\">\n      <ed-in label=\"r\" :val.sync=\"colors.rgba.r\" \n      :on-change=\"inputChange\"></ed-in>\n    </div>\n    <div class=\"vue-color__sketch__field--single\">\n      <ed-in label=\"g\" :val.sync=\"colors.rgba.g\" \n      :on-change=\"inputChange\"></ed-in>\n    </div>\n    <div class=\"vue-color__sketch__field--single\">\n      <ed-in label=\"b\" :val.sync=\"colors.rgba.b\"\n      :on-change=\"inputChange\"></ed-in>\n    </div>\n    <div class=\"vue-color__sketch__field--single\">\n      <ed-in label=\"a\" :val.sync=\"colors.a\" :arrow-offset=\"0.01\" :max=\"1\"\n      :on-change=\"inputChange\"></ed-in>\n    </div>\n  </div>\n  <div class=\"vue-color__sketch__presets\">\n    <div class=\"vue-color__sketch__presets-color\"\n      v-for=\"c in presetColors\"\n      :style=\"{background: c}\"\n      @click=\"handlePreset(c)\"\n      >\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 63 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(64)
-	__vue_script__ = __webpack_require__(66)
+	var __vue_styles__ = {}
+	__webpack_require__(63)
+	__vue_script__ = __webpack_require__(65)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/Chrome.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(67)
+	  console.warn("[vue-loader] src\\components\\Chrome.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(66)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
 	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	__vue_options__.template = __vue_template__
 	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
 	if (false) {(function () {  module.hot.accept()
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-6c52fe3e/Chrome.vue"
+	  var id = "_v-5adb9c32/Chrome.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -3852,13 +3880,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	})()}
 
 /***/ },
-/* 64 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(65);
+	var content = __webpack_require__(64);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(5)(content, {});
@@ -3878,7 +3906,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 65 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -3886,13 +3914,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n}\n.vue-color__chrome__controls {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  -webkit-transform: translate(-6px, -2px);\n          transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: -6px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Chrome.vue","/./src/components/Chrome.vue"],"names":[],"mappings":"AAoKA;EACE,iBAAA;EACA,mBAAA;EACA,+DAAA;EACA,oBAAA;EACA,aAAA;EACA,mBAAA;CCnKD;ADoKD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;CClKD;ADmKD;EACE,YAAA;CCjKD;ADkKD;EACE,gBAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;CChKD;ADiKD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CC/JD;ADgKC;;EAEE,mBAAA;CC9JH;AD+JC;;EAEE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;EACA,0BAAA;EACA,yCAAA;CC7JH;AD8JD;EACE,kBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CC5JD;AD6JD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CC3JD;AD4JD;EACE,kBAAA;EACA,YAAA;CC1JD;AD2JD;EACE,YAAA;EACA,kBAAA;EACA,mBAAA;CCzJD;AD0JD;EACE,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;EACA,WAAA;CCxJD;ADyJD;EACE,mBAAA;EACA,YAAA;EACA,aAAA;EACA,iBAAA;EACA,mBAAA;EACA,UAAA;EACA,WAAA;CCvJD;ADwJD;EACE,mBAAA;EACA,aAAA;EACA,mBAAA;CCtJD;ADuJD;EACE,mBAAA;EACA,aAAA;CCrJD;ADsJD;EACE,wBAAA;CCpJD;ADqJD;EACE,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,2BAAA;EACA,iBAAA;CCnJD;ADoJC;EACE,YAAA;EACA,aAAA;CClJH;ADoJC;EACE,gBAAA;EACA,YAAA;EACA,YAAA;EACA,oBAAA;EACA,aAAA;EACA,oCAAA;EACA,aAAA;EACA,mBAAA;CClJH;ADmJC;EACE,0BAAA;EACA,gBAAA;EACA,kBAAA;EACA,eAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;CCjJH","file":"Chrome.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.vue-color__chrome\n  background #fff\n  border-radius 2px\n  box-shadow 0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3)\n  box-sizing initial\n  width 225px\n  font-family Menlo\n.vue-color__chrome__controls\n  display flex\n.vue-color__chrome__color-wrap\n  width 32px\n.vue-color__chrome__active-color\n  margin-top 6px\n  width 16px\n  height 16px\n  border-radius 8px\n  position relative\n  overflow hidden\n.vue-color__chrome__sliders\n  flex 1\n  .vue-color__c-hue\n  .vue-color__c-alpha__gradient\n    border-radius 2px\n  .vue-color__c-alpha__picker,\n  .vue-color__c-hue__picker\n    width 12px\n    height 12px\n    border-radius 6px\n    transform translate(-6px, -2px)\n    background-color rgb(248, 248, 248)\n    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.37)\n.vue-color__chrome__fields-wrap\n  padding-top 16px\n  display flex\n.vue-color__chrome__fields\n  display flex\n  margin-left -6px\n  flex 1\n.vue-color__chrome__field\n  padding-left 6px\n  width 100%\n.vue-color__chrome__toggle-btn\n  width 32px\n  text-align right\n  position relative\n.vue-color__chrome__icon\n  margin-right -4px\n  margin-top 12px\n  cursor pointer\n  position relative\n  z-index 2\n.vue-color__chrome__icon-highlight\n  position absolute\n  width 24px\n  height 28px\n  background #eee\n  border-radius 4px\n  top 10px\n  left 12px  \n.vue-color__chrome__hue-wrap\n  position relative\n  height 10px\n  margin-bottom 8px\n.vue-color__chrome__alpha-wrap\n  position relative\n  height 10px\n.vue-color__chrome__chrome-body\n  padding 16px 16px 12px\n.vue-color__chrome__saturation-wrap\n  width 100%\n  padding-bottom 55%\n  position relative\n  border-radius 2px 2px 0 0\n  overflow hidden\n  .vue-color__saturation--circle\n    width 12px\n    height 12px\n.vue-color__chrome__fields\n  .vue-color__editable-input__input\n    font-size 11px\n    color #333\n    width 100%\n    border-rradius 2px\n    border none\n    box-shadow inset 0 0 0 1px #dadada\n    height 21px\n    text-align center\n  .vue-color__editable-input__label\n    text-transform uppercase\n    font-size 11px\n    line-height 11px\n    color #969696\n    text-align center\n    display block\n    margin-top 12px\n\n",".vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n}\n.vue-color__chrome__controls {\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: flex;\n  margin-left: -6px;\n  flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n}\n.vue-color__chrome__controls {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  -webkit-transform: translate(-6px, -2px);\n          transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: -6px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n", "", {"version":3,"sources":["/./src/components/src/components/Chrome.vue","/./src/components/Chrome.vue"],"names":[],"mappings":"AAoKA;EACE,iBAAA;EACA,mBAAA;EACA,+DAAA;EACA,oBAAA;EACA,aAAA;EACA,mBAAA;CCnKD;ADoKD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;CClKD;ADmKD;EACE,YAAA;CCjKD;ADkKD;EACE,gBAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,iBAAA;CChKD;ADiKD;EACE,oBAAA;MAAA,YAAA;UAAA,QAAA;CC/JD;ADgKC;;EAEE,mBAAA;CC9JH;AD+JC;;EAEE,YAAA;EACA,aAAA;EACA,mBAAA;EACA,yCAAA;UAAA,iCAAA;EACA,0BAAA;EACA,yCAAA;CC7JH;AD8JD;EACE,kBAAA;EACA,qBAAA;EAAA,qBAAA;EAAA,cAAA;CC5JD;AD6JD;EACE,qBAAA;EAAA,qBAAA;EAAA,cAAA;EACA,kBAAA;EACA,oBAAA;MAAA,YAAA;UAAA,QAAA;CC3JD;AD4JD;EACE,kBAAA;EACA,YAAA;CC1JD;AD2JD;EACE,YAAA;EACA,kBAAA;EACA,mBAAA;CCzJD;AD0JD;EACE,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;EACA,WAAA;CCxJD;ADyJD;EACE,mBAAA;EACA,YAAA;EACA,aAAA;EACA,iBAAA;EACA,mBAAA;EACA,UAAA;EACA,WAAA;CCvJD;ADwJD;EACE,mBAAA;EACA,aAAA;EACA,mBAAA;CCtJD;ADuJD;EACE,mBAAA;EACA,aAAA;CCrJD;ADsJD;EACE,wBAAA;CCpJD;ADqJD;EACE,YAAA;EACA,oBAAA;EACA,mBAAA;EACA,2BAAA;EACA,iBAAA;CCnJD;ADoJC;EACE,YAAA;EACA,aAAA;CClJH;ADoJC;EACE,gBAAA;EACA,YAAA;EACA,YAAA;EACA,oBAAA;EACA,aAAA;EACA,oCAAA;EACA,aAAA;EACA,mBAAA;CClJH;ADmJC;EACE,0BAAA;EACA,gBAAA;EACA,kBAAA;EACA,eAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;CCjJH","file":"Chrome.vue","sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n.vue-color__chrome\r\n  background #fff\r\n  border-radius 2px\r\n  box-shadow 0 0 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.3)\r\n  box-sizing initial\r\n  width 225px\r\n  font-family Menlo\r\n.vue-color__chrome__controls\r\n  display flex\r\n.vue-color__chrome__color-wrap\r\n  width 32px\r\n.vue-color__chrome__active-color\r\n  margin-top 6px\r\n  width 16px\r\n  height 16px\r\n  border-radius 8px\r\n  position relative\r\n  overflow hidden\r\n.vue-color__chrome__sliders\r\n  flex 1\r\n  .vue-color__c-hue\r\n  .vue-color__c-alpha__gradient\r\n    border-radius 2px\r\n  .vue-color__c-alpha__picker,\r\n  .vue-color__c-hue__picker\r\n    width 12px\r\n    height 12px\r\n    border-radius 6px\r\n    transform translate(-6px, -2px)\r\n    background-color rgb(248, 248, 248)\r\n    box-shadow 0 1px 4px 0 rgba(0, 0, 0, 0.37)\r\n.vue-color__chrome__fields-wrap\r\n  padding-top 16px\r\n  display flex\r\n.vue-color__chrome__fields\r\n  display flex\r\n  margin-left -6px\r\n  flex 1\r\n.vue-color__chrome__field\r\n  padding-left 6px\r\n  width 100%\r\n.vue-color__chrome__toggle-btn\r\n  width 32px\r\n  text-align right\r\n  position relative\r\n.vue-color__chrome__icon\r\n  margin-right -4px\r\n  margin-top 12px\r\n  cursor pointer\r\n  position relative\r\n  z-index 2\r\n.vue-color__chrome__icon-highlight\r\n  position absolute\r\n  width 24px\r\n  height 28px\r\n  background #eee\r\n  border-radius 4px\r\n  top 10px\r\n  left 12px  \r\n.vue-color__chrome__hue-wrap\r\n  position relative\r\n  height 10px\r\n  margin-bottom 8px\r\n.vue-color__chrome__alpha-wrap\r\n  position relative\r\n  height 10px\r\n.vue-color__chrome__chrome-body\r\n  padding 16px 16px 12px\r\n.vue-color__chrome__saturation-wrap\r\n  width 100%\r\n  padding-bottom 55%\r\n  position relative\r\n  border-radius 2px 2px 0 0\r\n  overflow hidden\r\n  .vue-color__saturation--circle\r\n    width 12px\r\n    height 12px\r\n.vue-color__chrome__fields\r\n  .vue-color__editable-input__input\r\n    font-size 11px\r\n    color #333\r\n    width 100%\r\n    border-rradius 2px\r\n    border none\r\n    box-shadow inset 0 0 0 1px #dadada\r\n    height 21px\r\n    text-align center\r\n  .vue-color__editable-input__label\r\n    text-transform uppercase\r\n    font-size 11px\r\n    line-height 11px\r\n    color #969696\r\n    text-align center\r\n    display block\r\n    margin-top 12px\r\n\r\n",".vue-color__chrome {\n  background: #fff;\n  border-radius: 2px;\n  box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.3);\n  box-sizing: initial;\n  width: 225px;\n  font-family: Menlo;\n}\n.vue-color__chrome__controls {\n  display: flex;\n}\n.vue-color__chrome__color-wrap {\n  width: 32px;\n}\n.vue-color__chrome__active-color {\n  margin-top: 6px;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  position: relative;\n  overflow: hidden;\n}\n.vue-color__chrome__sliders {\n  flex: 1;\n}\n.vue-color__chrome__sliders .vue-color__c-hue,\n.vue-color__chrome__sliders .vue-color__c-alpha__gradient {\n  border-radius: 2px;\n}\n.vue-color__chrome__sliders .vue-color__c-alpha__picker,\n.vue-color__chrome__sliders .vue-color__c-hue__picker {\n  width: 12px;\n  height: 12px;\n  border-radius: 6px;\n  transform: translate(-6px, -2px);\n  background-color: #f8f8f8;\n  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);\n}\n.vue-color__chrome__fields-wrap {\n  padding-top: 16px;\n  display: flex;\n}\n.vue-color__chrome__fields {\n  display: flex;\n  margin-left: -6px;\n  flex: 1;\n}\n.vue-color__chrome__field {\n  padding-left: 6px;\n  width: 100%;\n}\n.vue-color__chrome__toggle-btn {\n  width: 32px;\n  text-align: right;\n  position: relative;\n}\n.vue-color__chrome__icon {\n  margin-right: -4px;\n  margin-top: 12px;\n  cursor: pointer;\n  position: relative;\n  z-index: 2;\n}\n.vue-color__chrome__icon-highlight {\n  position: absolute;\n  width: 24px;\n  height: 28px;\n  background: #eee;\n  border-radius: 4px;\n  top: 10px;\n  left: 12px;\n}\n.vue-color__chrome__hue-wrap {\n  position: relative;\n  height: 10px;\n  margin-bottom: 8px;\n}\n.vue-color__chrome__alpha-wrap {\n  position: relative;\n  height: 10px;\n}\n.vue-color__chrome__chrome-body {\n  padding: 16px 16px 12px;\n}\n.vue-color__chrome__saturation-wrap {\n  width: 100%;\n  padding-bottom: 55%;\n  position: relative;\n  border-radius: 2px 2px 0 0;\n  overflow: hidden;\n}\n.vue-color__chrome__saturation-wrap .vue-color__saturation--circle {\n  width: 12px;\n  height: 12px;\n}\n.vue-color__chrome__fields .vue-color__editable-input__input {\n  font-size: 11px;\n  color: #333;\n  width: 100%;\n  border-rradius: 2px;\n  border: none;\n  box-shadow: inset 0 0 0 1px #dadada;\n  height: 21px;\n  text-align: center;\n}\n.vue-color__chrome__fields .vue-color__editable-input__label {\n  text-transform: uppercase;\n  font-size: 11px;\n  line-height: 11px;\n  color: #969696;\n  text-align: center;\n  display: block;\n  margin-top: 12px;\n}\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 66 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3917,7 +3945,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _Hue2 = _interopRequireDefault(_Hue);
 	
-	var _Alpha = __webpack_require__(47);
+	var _Alpha = __webpack_require__(46);
 	
 	var _Alpha2 = _interopRequireDefault(_Alpha);
 	
@@ -3993,7 +4021,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 67 */
+/* 66 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vue-color__chrome\">\n  <div class=\"vue-color__chrome__saturation-wrap\">\n    <saturation :colors.sync=\"colors\" :on-change=\"childChange\"></saturation>\n  </div>\n  <div class=\"vue-color__chrome__chrome-body\">\n    <div class=\"vue-color__chrome__controls\">\n      <div class=\"vue-color__chrome__color-wrap\">\n        <div class=\"vue-color__chrome__active-color\" :style=\"{background: activeColor}\"></div>\n      </div>\n\n      <div class=\"vue-color__chrome__sliders\">\n        <div class=\"vue-color__chrome__hue-wrap\">\n          <hue :colors.sync=\"colors\" :on-change=\"childChange\"></hue>  \n        </div>\n        <div class=\"vue-color__chrome__alpha-wrap\">\n          <alpha :colors.sync=\"colors\" :on-change=\"childChange\"></alpha>\n        </div>\n      </div>\n    </div>\n    \n    <div class=\"vue-color__chrome__fields-wrap\">\n      <div class=\"vue-color__chrome__fields\" v-show=\"fieldsIndex === 0\">\n        <!-- hex -->\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"hex\"\n          :val.sync=\"colors.hex\"\n          :on-change=\"inputChange\"></ed-in>  \n        </div>\n      </div>\n      <div class=\"vue-color__chrome__fields\" v-show=\"fieldsIndex === 1\">\n        <!-- rgba -->\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"r\" :val.sync=\"colors.rgba.r\" \n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"g\" :val.sync=\"colors.rgba.g\" \n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"b\" :val.sync=\"colors.rgba.b\"\n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"a\" :val.sync=\"colors.a\" :arrow-offset=\"0.01\" :max=\"1\"\n          :on-change=\"inputChange\"></ed-in>\n        </div>\n      </div>\n      <div class=\"vue-color__chrome__fields\" v-show=\"fieldsIndex === 2\">\n        <!-- hsla -->\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"h\" :val.sync=\"colors.hsl.h\" \n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\"> \n          <ed-in label=\"s\" :val.sync=\"colors.hsl.s\"\n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"l\" :val.sync=\"colors.hsl.l\"\n          :on-change=\"inputChange\"></ed-in>\n        </div>\n        <div class=\"vue-color__chrome__field\">\n          <ed-in label=\"a\" :val.sync=\"colors.a\" :arrow-offset=\"0.01\" :max=\"1\"\n          :on-change=\"inputChange\"></ed-in>\n        </div>\n      </div>\n      <!-- btn -->\n      <div class=\"vue-color__chrome__toggle-btn\" @click=\"toggleViews\">\n        <div class=\"vue-color__chrome__icon\">\n          <svg style=\"width:24px; height:24px\" viewBox=\"0 0 24 24\" \n            @mouseover=\"showHighlight\" \n            @mouseenter=\"showHighlight\" \n            @mouseout=\"hideHighlight\">\n            <path fill=\"#333\" d=\"M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z\" />\n          </svg>\n        </div>\n        <div class=\"vue-color__chrome__icon-highlight\" v-show=\"highlight\"></div>\n      </div>\n      <!-- btn -->\n    </div>      \n  </div>\n</div>\n";
