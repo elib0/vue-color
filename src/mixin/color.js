@@ -19,7 +19,10 @@ function _colorChange (data, oldHue) {
     hsv: hsv,
     oldHue: data.h || oldHue || hsl.h,
     source: data.source,
-    a: data.a
+    a: data.a,
+    css: {
+      rgba: 'rgba('+color.toRgb().r+', '+color.toRgb().g+', '+color.toRgb().b+', '+color.toRgb().a+')'
+    }
   }
 }
 
@@ -40,6 +43,7 @@ export default {
   methods: {
     colorChange (data, oldHue) {
       this.colors = _colorChange(data, oldHue)
+      $emit('change-color', data)
     },
     isValidHex (hex) {
       return tinycolor(hex).isValid()
