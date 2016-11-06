@@ -28,7 +28,9 @@ function _colorChange (data, oldHue) {
 
 export default {
   props: {
-    colors: Object
+    colors: Object,
+    classes: Array,
+    fonts: Array
   },
   created () {
     // console.log(this.colors)
